@@ -6,55 +6,67 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <a href="/"><img src="img/logo.png" alt="logo"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="exhibitions.html">Exhibitions</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </header>
+  <header>
+    <a href="/"><img src="img/logo.png" alt="logo"></a>
+    <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
+    <input type="text" id="searchInput" placeholder="Recherche...">
+    <button id="searchButton"onclick="searchPages()">Rechercher</button>
+</header>
+  <div class="sidebar", id="sidebar">
+    <a href="index.html" >Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <ul>
+        <li><a href="tous-les-projets.html">   Tous les projets</a></li>
+        <li><a href="marvel.html">   Marvel</a></li>
+    </ul>
+    <a href="exhibitions.html">Exhibition</a>
+    <a href="contacts.html"class="active">Contacts</a>
+</div>
 
-    <div class="contacts">
-      <div class="pagetitle">
-        <p><H1>CONTACTS</H1></p>
+  <div class="contacts">
+    <div class ="picture-title">
+      <div class="pagetitle-text">
+          <H1>CONTACTS</H1>
       </div>
-        <div class="gallery">
-            <div class="square">
-              <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank">
-                <img src="img/logo_youtube.png" alt="YouTube">
+  </div>
+      <div class="gallery">
+          <div class="square">
+            <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank">
+              <img src="img/logo_youtube.png" alt="YouTube">
+            </a>
+            <p>Youtube</p>
+          </div>
+          <div class="square">
+              <a href="https://www.instagram.com/bricks44creations/" target="_blank">
+                <img src="img/logo_instagram.png" alt="Instagram">
               </a>
-              <p>Youtube</p>
-            </div>
-            <div class="square">
-                <a href="https://www.instagram.com/bricks44creations/" target="_blank">
-                  <img src="img/logo_instagram.png" alt="Instagram">
-                </a>
-                <p>Instagram</p>
-            </div>
-            <div class="square">
-              <a href="https://www.tiktok.com" target="_blank">
-                <img src="img/logo_tiktok.png" alt="TikTok">
-              </a>
-              <p>Tiktok</p>
-            </div>
-            <div class="square">
-              <a href="mailto:stix.bricks@gmail.com" target="_blank">
-                <img src="img/logo_mail.png" alt="Mail">
-              </a>
-              <p>Mail</p>
-            </div>
-        </div>
-    </div>
+              <p>Instagram</p>
+          </div>
+          <div class="square">
+            <a href="https://www.tiktok.com" target="_blank">
+              <img src="img/logo_tiktok.png" alt="TikTok">
+            </a>
+            <p>Tiktok</p>
+          </div>
+          <div class="square">
+            <a href="mailto:stix.bricks@gmail.com" target="_blank">
+              <img src="img/logo_mail.png" alt="Mail">
+            </a>
+            <p>Mail</p>
+          </div>
+      </div>
+  </div>
 
-    <footer>
-        <a href="https://www.instagram.com/bricks44creations/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
-        <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> <img src="img/logo_youtube.png" alt="Logo Youtube"></a>
-        <a href="/" target="_blank"> <img src="img/logo_mail.png" alt="Logo Mail"></a>
-        <a href="/" target="_blank"> <img src="img/logo_tiktok.png" alt="Logo Tiktok"></a>
-        <a href="/">Bricks Creations</a>
-    </footer>
+  <footer>
+      <a href="https://www.instagram.com/bricks44creations/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
+      <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> <img src="img/logo_youtube.png" alt="Logo Youtube"></a>
+      <a href="/" target="_blank"> <img src="img/logo_mail.png" alt="Logo Mail"></a>
+      <a href="/" target="_blank"> <img src="img/logo_tiktok.png" alt="Logo Tiktok"></a>
+      <a href="/">Bricks Creations</a>
+  </footer>
     
+  <script src="./js/script.js"></script>
+  <script src="./js/search.js"></script>
+
 </body>
 </html>
