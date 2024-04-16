@@ -8,17 +8,27 @@
 <body>
     <header>
         <a href="/"><img src="img/logo.png" alt="logo"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="exhibitions.html">Exhibitions</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
+        <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
+        <input type="text" id="searchInput" placeholder="Recherche...">
+        <button id="searchButton" onclick="searchPages()">Rechercher</button>
     </header>
 
+    <div class="sidebar", id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <ul>
+            <li><a href="tous-les-projets.html">   Tous les projets</a></li>
+            <li><a href="marvel.html">   Marvel</a></li>
+        </ul>
+        <a href="exhibitions.html" class="active">Exhibition</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+
     <div class="exhibitions">
-        <div class="Pagetitle">
-            <p><H1>EXHIBITIONS</H1></p>
+        <div class ="picture-title">
+            <div class="pagetitle-text">
+                <H1>EXHIBITIONS</H1>
+            </div>
         </div>
         <p><h2>The differents themes below are the themes I made</h2></p>
         <ul>
@@ -34,6 +44,9 @@
         <a href="/" target="_blank"> <img src="img/logo_tiktok.png" alt="Logo Tiktok"></a>
         <a href="/">Bricks Creations</a>
     </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="./js/search.js"></script>
 
 </body>
 </html>
