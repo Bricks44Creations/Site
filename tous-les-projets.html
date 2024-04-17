@@ -4,38 +4,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bricks Creations</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header>
         <a href="/"><img src="img/logo.png" alt="logo"></a>
-        <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
-        <input type="text" id="searchInput" placeholder="Recherche...">
-        <button id="searchButton"onclick="searchPages()">Rechercher</button>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton"onclick="searchPages()">Search</button>
     </header>
 
     <div class="sidebar", id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Bricks Creations</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
         <ul>
-            <li><a href="tous-les-projets.html" class="active">   Tous les projets</a></li>
-            <li><a href="portfolio.html">   Marvel</a></li>
+            <li>
+                <a href="index.html">
+                    <i class="bx bxs-home"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="exhibitions.html">
+                    <i class="bx bx-share-alt"></i>
+                    <span class="nav-item">Exhibitions</span>
+                </a>
+                <span class="tooltip">Exhibitions</span>
+            </li>
+            <li>
+                <a href="contacts.html">
+                    <i class="bx bxs-contact"></i>
+                    <span class="nav-item">Contacts</span>
+                </a>
+                <span class="tooltip">Contacts</span>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    <i class="bx bxs-photo-album"></i>
+                    <span class="nav-item">Portfolio</span>
+                </a>
+                <span class="tooltip">Portfolio</span>
+            </li>
+            
         </ul>
-        <a href="exhibitions.html">Exhibition</a>
-        <a href="contacts.html">Contacts</a>
     </div>
 
-    <div class="portfolio">
-        <div class ="picture-title">
-            <div class="pagetitle-text">
-                <H1>PORTFOLIO</H1>
+    <div class="main-content">
+        <div class="container">
+            <div class ="picture-title">
+                <div class="pagetitle-text">
+                    <H1>EXHIBITIONS</H1>
+                </div>
             </div>
-        </div>
-        <p><h2>The differents themes below are the themes I made</h2></p>
-        <ul>
-            <li><a href="city.html">City</a></li>
-            <li><a href="marvel.html">Marvel</a></li>
-            <li><a href="jurassic park.html">Jurassic Park</a></li>
+            <p><h2>The differents exhibitions below that I made</h2></p>
+            <ul>
+                <li><a href="bousies.html">City</a></li>
+                <li><a href="divion.html">Marvel</a></li>
+            </ul>
         </ul>
+        </div>
     </div>
 
     <footer>
@@ -43,11 +76,20 @@
         <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> <img src="img/logo_youtube.png" alt="Logo Youtube"></a>
         <a href="/" target="_blank"> <img src="img/logo_mail.png" alt="Logo Mail"></a>
         <a href="/" target="_blank"> <img src="img/logo_tiktok.png" alt="Logo Tiktok"></a>
-        <a href="/">Bricks Creations</a>
+        <a href="/"> Bricks Creations</a>
     </footer>
-
-    <script src="./js/script.js"></script>
-    <script src="./js/search.js"></script>
-
 </body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+<script src="./js/script.js"></script>
+<script src="./js/search.js"></script>
+
 </html>

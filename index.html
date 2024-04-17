@@ -4,64 +4,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bricks Creations</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header>
         <a href="/"><img src="img/logo.png" alt="logo"></a>
-        <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
-        <input type="text" id="searchInput" placeholder="Recherche...">
-        <button id="searchButton"onclick="searchPages()">Rechercher</button>
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button id="searchButton"onclick="searchPages()">Search</button>
     </header>
 
     <div class="sidebar", id="sidebar">
-        <a href="index.html" class="active">Home</a>
-        <a href="portfolio.html">Portfolio</a>
+        <div class="top">
+            <div class="name">
+                <i class="bx bxs-circle"></i>
+                <i class="bx bxs-circle"></i>
+                <span>Bricks Creations</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
         <ul>
-            <li><a href="tous-les-projets.html">   Tous les projets</a></li>
-            <li><a href="marvel.html">   Marvel</a></li>
+            <li>
+                <a href="index.html">
+                    <i class="bx bxs-home"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="exhibitions.html">
+                    <i class="bx bx-share-alt"></i>
+                    <span class="nav-item">Exhibitions</span>
+                </a>
+                <span class="tooltip">Exhibitions</span>
+            </li>
+            <li>
+                <a href="contacts.html">
+                    <i class="bx bxs-contact"></i>
+                    <span class="nav-item">Contacts</span>
+                </a>
+                <span class="tooltip">Contacts</span>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    <i class="bx bxs-photo-album"></i>
+                    <span class="nav-item">Portfolio</span>
+                </a>
+                <span class="tooltip">Portfolio</span>
+            </li>
+            
         </ul>
-        <a href="exhibitions.html">Exhibition</a>
-        <a href="contacts.html">Contacts</a>
     </div>
 
-    <div class="index">
-        <div class ="picture-title">
-            <div class="pagetitle-text">
-                <H1>WELCOME TO BRICKS CREATIONS</H1>
+    <div class="main-content">
+        <div class="container">
+            <div class ="picture-title">
+                <div class="pagetitle-text">
+                    <H1>WELCOME TO BRICKS CREATIONS</H1>
+                </div>
             </div>
-        </div>
-        <div><h3>Stats</h3>
-            <ul>
-                <li>Nombre de sets achetées : 945</li>
-                <li>Nombre d'expositions : </li>
-                <li>Superficie : </li>
-            </ul>
-        </div>
-
-        <div class = "separator"></div>
+            <div><h3>Stats</h3>
+                <div class="gallery">
+                    <div class="stats">
+                        <div class="number">
+                            <p>945</p>
+                        </div>
+                        <p>Nombre de sets achetées</p>
+                    </div>
+                    <div class="stats">
+                        <div class="number">
+                            <p>100</p>
+                        </div>
+                        <p>Superficie d'exposition</p>
+                    </div>
+                    <div class="stats">
+                        <div class="number">
+                            <p>18</p>
+                        </div>
+                        <p>Nombre d'anneées</p>
+                    </div>
+                </div>
+            </div>
         
-        <div><h3>Lexique</h3>
-            <ul>
-                <li>AFOL : pour « Adult Fan Of LEGO », un adulte passionné de LEGO.</li>
-                <li>TFOL : pour « Teenager Fan Of LEGO », un adolescent passionné de LEGO.</li>
-                <li>Minifig ou minifigure ou MF : les personnages LEGO.</li>
-                <li>Set : boîte Lego officielle, notée par sa référence.</li>
-                <li>MOC : Acronym used for the expression My Own Creation. This term is widely used by LEGO fans to identify any type of creation, whether virtual or physical but always based on LEGO bricks. By extension, those who create MOCs are generally called MOCers.
-                </li>
-                <li>MOD : modification d’un set officiel pour le personnaliser, l’améliorer, etc…</li>
-                <li>Diorama : Term used to designate a large format scene featuring buildings, machines, characters, etc ... on a given theme and reconstructed using LEGO pieces. This term is widely used during exhibitions organized by fan associations.
-                </li>
-                <li>Vignette : Term used to refer to a scene on a given theme created using LEGO parts and generally presented on a basis of 8 studs (studs) x 8 studs (tenons). This format was very fashionable a few years ago, especially during competitions organized by different groups of fans to force MOCers to be creative and define a global constraint applicable to all participants.
-                </li>
-            </ul>
+            <div class = "separator"></div>
+                
+            <div><h3>Lexique</h3>
+                <ul>
+                    <li>AFOL : pour « Adult Fan Of LEGO », un adulte passionné de LEGO.</li>
+                    <li>TFOL : pour « Teenager Fan Of LEGO », un adolescent passionné de LEGO.</li>
+                    <li>Minifig ou minifigure ou MF : les personnages LEGO.</li>
+                    <li>Set : boîte Lego officielle, notée par sa référence.</li>
+                    <li>MOC : Acronym used for the expression My Own Creation. This term is widely used by LEGO fans to identify any type of creation, whether virtual or physical but always based on LEGO bricks. By extension, those who create MOCs are generally called MOCers.
+                    </li>
+                    <li>MOD : modification d’un set officiel pour le personnaliser, l’améliorer, etc…</li>
+                    <li>Diorama : Term used to designate a large format scene featuring buildings, machines, characters, etc ... on a given theme and reconstructed using LEGO pieces. This term is widely used during exhibitions organized by fan associations.
+                    </li>
+                    <li>Vignette : Term used to refer to a scene on a given theme created using LEGO parts and generally presented on a basis of 8 studs (studs) x 8 studs (tenons). This format was very fashionable a few years ago, especially during competitions organized by different groups of fans to force MOCers to be creative and define a global constraint applicable to all participants.
+                    </li>
+                </ul>
+            </div>
+        
+            <div class = "separator"></div>
+        
+            <div>
+                <h3>Comments</h3>
+                <p>,dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
+                </p>
+            </div>
+        
         </div>
-
-        <div class = "separator"></div>
-
-        <div>
-            <h3>Comments</h3>
-        </div>
-
     </div>
 
     <footer>
@@ -72,8 +159,19 @@
         <a href="/"> Bricks Creations</a>
     </footer>
 
-    <script src="./js/script.js"></script>
-    <script src="./js/search.js"></script>
-    
 </body>
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active');
+    };
+</script>
+
+<script src="./js/script.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/taille-sidebar.js"></script>
+
 </html>
