@@ -9,16 +9,18 @@
 
 <body>
     <header>
-        <a href="/"><img src="img/logo.png" alt="logo"></a>
+        <a href="/"><img src="img/logo_essai_3.png" alt="logo"></a>
+        <p>BRICKS CREATIONS</p>
         <input type="text" id="searchInput" placeholder="Search...">
-        <button id="searchButton"onclick="searchPages()">Search</button>
+        <button id="searchButton"onclick="searchPages()">
+            <i class="bx bx-search-alt-2"></i>
+        </button>
     </header>
 
     <div class="sidebar", id="sidebar">
         <div class="top">
             <div class="name">
-                <i class="bx bxs-circle"></i>
-                <i class="bx bxs-circle"></i>
+                <i class="bx bxl-codepen"></i>
                 <span>Bricks Creations</span>
             </div>
             <i class="bx bx-menu" id="btn"></i>
@@ -30,6 +32,20 @@
                     <span class="nav-item">Home</span>
                 </a>
                 <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="portfolio.html">
+                    <i class="bx bxs-photo-album"></i>
+                    <span class="nav-item">Portfolio</span>
+                </a>
+                <span class="tooltip">Portfolio</span>
+            </li>
+            <li>
+                <a href="tips.html">
+                    <i class="bx bxs-bulb"></i>
+                    <span class="nav-item">Tips</span>
+                </a>
+                <span class="tooltip">Tips</span>
             </li>
             <li>
                 <a href="exhibitions.html">
@@ -45,118 +61,96 @@
                 </a>
                 <span class="tooltip">Contacts</span>
             </li>
-            <li>
-                <a href="portfolio.html">
-                    <i class="bx bxs-photo-album"></i>
-                    <span class="nav-item">Portfolio</span>
-                </a>
-                <span class="tooltip">Portfolio</span>
-            </li>
-            
         </ul>
     </div>
 
     <div class="main-content">
-        <div class="container">
-            <div class ="picture-title">
-                <div class="pagetitle-text">
-                    <H1>WELCOME TO BRICKS CREATIONS</H1>
+        <div class ="title">
+            <H1>HOME</H1>
+        </div>
+
+        <div class = "separator"></div>
+
+        <div class ="title2">
+            <H2>STATISTICS</H2>
+        </div>
+        <div class="gallery-stats">
+            <div class="stats">
+                <div class="number">
+                    <p>945</p>
                 </div>
+                <p>Nombre de sets achetées</p>
             </div>
-            <div><h3>Stats</h3>
-                <div class="gallery">
-                    <div class="stats">
-                        <div class="number">
-                            <p>945</p>
-                        </div>
-                        <p>Nombre de sets achetées</p>
-                    </div>
-                    <div class="stats">
-                        <div class="number">
-                            <p>100</p>
-                        </div>
-                        <p>Superficie d'exposition</p>
-                    </div>
-                    <div class="stats">
-                        <div class="number">
-                            <p>18</p>
-                        </div>
-                        <p>Nombre d'anneées</p>
-                    </div>
+            <div class="stats">
+                <div class="number">
+                    <p>100</p>
                 </div>
+                <p>Superficie d'exposition</p>
             </div>
+            <div class="stats">
+                <div class="number">
+                    <p>18</p>
+                </div>
+                <p>Nombre d'anneées</p>
+            </div>
+        </div>
         
-            <div class = "separator"></div>
+        <div class = "separator"></div>
                 
-            <div><h3>Lexique</h3>
-                <ul>
-                    <li>AFOL : pour « Adult Fan Of LEGO », un adulte passionné de LEGO.</li>
-                    <li>TFOL : pour « Teenager Fan Of LEGO », un adolescent passionné de LEGO.</li>
-                    <li>Minifig ou minifigure ou MF : les personnages LEGO.</li>
-                    <li>Set : boîte Lego officielle, notée par sa référence.</li>
-                    <li>MOC : Acronym used for the expression My Own Creation. This term is widely used by LEGO fans to identify any type of creation, whether virtual or physical but always based on LEGO bricks. By extension, those who create MOCs are generally called MOCers.
-                    </li>
-                    <li>MOD : modification d’un set officiel pour le personnaliser, l’améliorer, etc…</li>
-                    <li>Diorama : Term used to designate a large format scene featuring buildings, machines, characters, etc ... on a given theme and reconstructed using LEGO pieces. This term is widely used during exhibitions organized by fan associations.
-                    </li>
-                    <li>Vignette : Term used to refer to a scene on a given theme created using LEGO parts and generally presented on a basis of 8 studs (studs) x 8 studs (tenons). This format was very fashionable a few years ago, especially during competitions organized by different groups of fans to force MOCers to be creative and define a global constraint applicable to all participants.
-                    </li>
-                </ul>
-            </div>
+        <div class ="title2">
+            <H2>LEXICON</H2>
+        </div>
+        <div class="lexicon">
+            <ul>
+                <li>AFOL : pour « Adult Fan Of LEGO », un adulte passionné de LEGO.</li>
+                <li>TFOL : pour « Teenager Fan Of LEGO », un adolescent passionné de LEGO.</li>
+                <li>Minifig ou minifigure ou MF : les personnages LEGO.</li>
+                <li>Set : boîte Lego officielle, notée par sa référence.</li>
+                <li>MOC : Acronym used for the expression My Own Creation. This term is widely used by LEGO fans to identify any type of creation, whether virtual or physical but always based on LEGO bricks. By extension, those who create MOCs are generally called MOCers.
+                </li>
+                <li>MOD : modification d’un set officiel pour le personnaliser, l’améliorer, etc…</li>
+                <li>Diorama : Term used to designate a large format scene featuring buildings, machines, characters, etc ... on a given theme and reconstructed using LEGO pieces. This term is widely used during exhibitions organized by fan associations.
+                </li>
+                <li>Vignette : Term used to refer to a scene on a given theme created using LEGO parts and generally presented on a basis of 8 studs (studs) x 8 studs (tenons). This format was very fashionable a few years ago, especially during competitions organized by different groups of fans to force MOCers to be creative and define a global constraint applicable to all participants.
+                </li>
+            </ul>
+        </div>
         
-            <div class = "separator"></div>
+        <div class = "separator"></div>
         
-            <div>
-                <h3>Comments</h3>
-                <p>,dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                    dfgjd,fgb,jh,jgfkxfhgkdh;gbkgkvjfhg;b;,vf,gbv,dcb
-                </p>
-            </div>
-        
+        <div class="title2">
+            <H2>COMMENTS</H2>
+        </div>
+        <div class="Commentaires">
+            <form id="comment-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                </form>
         </div>
     </div>
 
     <footer>
-        <a href="https://www.instagram.com/bricks44creations/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
-        <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> <img src="img/logo_youtube.png" alt="Logo Youtube"></a>
-        <a href="/" target="_blank"> <img src="img/logo_mail.png" alt="Logo Mail"></a>
-        <a href="/" target="_blank"> <img src="img/logo_tiktok.png" alt="Logo Tiktok"></a>
-        <a href="/"> Bricks Creations</a>
+        <div class="lien">
+            <a href="https://www.instagram.com/bricks44creations/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.instagram.com/bricks44creations/" target="_blank"> @bricks44reations</a>
+            <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> <img src="img/logo_youtube.png" alt="Logo Youtube"></a>
+            <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> Bricks Creations</a>
+            <a href="mailto:stix.bricks@gmail.com" target="_blank"> <img src="img/logo_mail.png" alt="Logo Mail"></a>
+            <a href="mailto:stix.bricks@gmail.com" target="_blank"> stix.bricks@gmail.com</a>
+            <a href="/" target="_blank"> <img src="img/logo_tiktok.png" alt="Logo Tiktok"></a>
+            <a href="/"> Bricks Creations</a>
+        </div>
+        <p>© 2024 All rights reserved Bricks Creations <br>
+            I don't work for LEGO®, I am not corrupted by LEGO®, I buy my LEGO® myself. <br>
+            For the rest, the owners of the respective brands mentioned on the site remain the owners and it is very well like that <br>
+            LEGO® is a registered trademark of The LEGO Group which does not sponsor, authorize or endorse this site.</p>
     </footer>
 
 </body>

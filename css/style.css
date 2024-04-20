@@ -9,7 +9,7 @@
 
 header{
     position:absolute;
-    background-color: rgb(230, 230, 230);
+    background-color: #dedede;
     top: 0;
     left: 0;
     margin: 0;
@@ -21,19 +21,38 @@ header{
 
 #searchInput {
     position: absolute;
-    top: 30px; /* Ajustez la position verticale selon vos besoins */
+    height: 30px;
+    width: 300px;
+    top: 15px; /* Ajustez la position verticale selon vos besoins */
     right: 20px; /* Ajustez la position horizontale selon vos besoins */
 }
 #searchButton {
     position: absolute;
-    top: 30px; /* Ajustez la position verticale selon vos besoins */
+    background-color :#003693;
+    height: 30px;
+    width: 30px;
+    top: 15px; /* Ajustez la position verticale selon vos besoins */
     right: 20px; /* Ajustez la position horizontale selon vos besoins */
+}
+
+header i{
+    text-align: center;
+    color: #fff;
+    transform: scale(2);
 }
 
 header img{
     margin-top: auto;
     margin-left: 50px;
-    width: 60;
+    width: 55;
+    font-size: large;
+}
+
+header p{
+    margin-left: 120px;
+    top: 10px;
+    color: #003693;
+    transform: translateY(-35px);
 }
 
 header>a{
@@ -54,60 +73,45 @@ header>a{
 
 footer{
     position:relative;
-    height: 80px;
+    height: 130px;
     width: 100%;
-    background-color: rgb(230, 230, 230);
+    background-color: #dedede;
     bottom: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
 }
 
 footer>*{
+    bottom: 0;
     position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    bottom: 100%;
 }
 
-footer img{
-    width: 30;
+footer .lien{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
-footer>a{
+footer .lien a {
+    margin-right: 10px; /* Espacement entre les liens */
+    margin-left: 10px;
     color: black;
+    transform: translateY(-80px);
 }
 
-footer a:nth-child(1) {
-    margin-left: 105;
-    transform: translateY(50%);
-    transform: translateY(55px);
+footer .lien img{
+    width: 30;
+    margin-left: 40px;
 }
 
-footer a:nth-child(2) {
-    margin-left: 140;
-    transform: translateY(50%);
-    transform: translateY(55px);
+footer p{
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: xx-small;
 }
-
-footer a:nth-child(3) {
-    margin-left: 175;
-    transform: translateY(50%);
-    transform: translateY(55px);
-}
-
-footer a:nth-child(4) {
-    margin-left: 210;
-    transform: translateY(50%);
-    transform: translateY(55px);
-}
-
-footer a:nth-child(5) {
-    margin-left: 255;
-    font-weight: 100;
-    transform: translateY(50%);
-    transform: translateY(50px);
-}
-
-
-
 
 
 
@@ -120,7 +124,7 @@ footer a:nth-child(5) {
 
 .separator{
     height: 1px;
-    background-color: rgb(72, 173, 255);
+    background-color: #003693;
     width: 100%;
     margin: 20px 0px;
 }
@@ -143,17 +147,12 @@ footer a:nth-child(5) {
     left: 0px;
     min-height: 115vh;
     width: 80px;
-    background-color: #12171e;
+    background-color: #003693;
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
 }
 
 @media (min-height: 100%) {
-}
-
-.sidebar.active ~ .main-content{
-    left: 250px;
-    width: calc(100% - 250px);
 }
 
 .sidebar.active{
@@ -212,7 +211,7 @@ footer a:nth-child(5) {
 
 .sidebar ul li a:hover{
     background-color: #fff;
-    color: #12171e;
+    color: #003693;
 }
 
 .sidebar ul li a i{
@@ -277,6 +276,11 @@ footer a:nth-child(5) {
     padding: 1rem;
 }
 
+.sidebar.active ~ .main-content{
+    left: 250px;
+    width: calc(100% - 250px);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -286,30 +290,20 @@ body{
     height: 100%;
 }
 
-.picture-title { 
+.title { 
     width: 100%;
-    height: 100px;
-    background-color:rgb(83, 129, 229);
-    background-position: center;
-    background-size: cover;
+    font-size: x-large;
+    color: #003693;
     position:relative;
     z-index: 900;
 }
 
-.pagetitle-text{
-    text-align: center;
-    color: #ffffff;
-    transform: translateY(30px);
-}
-
-.main-content>ul{
-    text-decoration: none;
-}
-
-.main-content ul li{
-    margin: 10;
-    font-weight: 600;
-    list-style: none;
+.title2 { 
+    width: 100%;
+    font-size: large;
+    color: #003693;
+    position:relative;
+    z-index: 900;
 }
 
 
@@ -325,11 +319,22 @@ body{
 /*HOME*/
 /*STATS*/
 
+.gallery-stats {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 10%;
+    height: 50%;
+}
+
 .stats {
     width: 200px;
-    height: 100px;
-    background-color: white;
-    border: 2px solid #ccc;
+    height: 200px;
+    background-color: #003693; /* Remplacez 'votre-image.jpg' par le chemin de votre image */
+    background-size: cover; /* Pour s'assurer que l'image couvre tout l'arrière-plan */
+    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
+    background-position: center; /* Pour centrer l'image */
     border-radius: 10px;
     display: flex;
     flex-direction: column; /* Les éléments sont affichés en colonne */
@@ -344,16 +349,178 @@ body{
 }
 
 .stats .number {
-    font-size: x-large;
+    font-size: xx-large;
+    color: white;
 }
 
 .stats p {
+    color: white;
     margin-top: 10px; /* Espace entre le nombre et le texte */
 }
 
-/*LEXIQUE*/
 
 
+
+/*LEXICON*/
+
+.lexicon>ul{
+    text-decoration: none;
+}
+
+.lexicon ul li{
+    margin: 10;
+    font-weight: 600;
+    list-style: none;
+}
+
+
+
+
+/*COMMENTS*/
+
+.commentaires{
+    background-color: #ccc;
+    margin-top: 20px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+ #comment-form button:hover {
+    background-color: #003693;
+}
+
+.commentaires label,
+.commentaires textarea,
+.commentaires input {
+    margin-bottom: 10px;
+}
+
+.commentaires button {
+    margin-top: 10px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.vignette {
+    display: flex;
+    flex-wrap: wrap; /*ùpour que les éléments ne dépassent pas la largeur d'une fenêtre*/
+    flex-direction: row; /* Les éléments sont affichés en colonne */
+    text-align: center; /* Alignement du texte au centre */
+}
+
+.vignette a img{
+    flex-basis: calc(25% - 20px);
+    background-size: cover; /* l'image couvre entièrement la vignette*/
+    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
+    margin: 10px;
+    border: 1px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 256px;
+    height:144px;
+    justify-content: center;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+/*PORTFOLIO*/
+
+.vignette .city:hover,
+.vignette .marvel:hover,
+.vignette .jurassicpark:hover,
+.vignette .space:hover,
+.vignette .ninjago:hover,
+.vignette .castle:hover,
+.vignette .western:hover,
+.vignette .christmas:hover,
+.vignette .seize:hover{
+    transform: scale(1.05);
+}
+
+.vignette .city .description,
+.vignette .marvel .description,
+.vignette .jurassicpark .description,
+.vignette .space .description,
+.vignette .ninjago .description,
+.vignette .castle .description,
+.vignette .western .description,
+.vignette .christmas .description,
+.vignette .seize .description{
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TIPS*/
+
+.vignette .rock:hover{
+    transform: scale(1.05);
+}
+
+.vignette .rock .description,
+.vignette .city .description,
+.vignette .marvel .description,
+.vignette .jurassicpark .description,
+.vignette .space .description,
+.vignette .ninjago .description,
+.vignette .castle .description,
+.vignette .western .description,
+.vignette .christmas .description
+.vignette .seize .description{
+    width: 256px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette .rock .date,
+.vignette .city .date,
+.vignette .marvel .date,
+.vignette .jurassicpark .date,
+.vignette .space .date,
+.vignette .ninjago .date,
+.vignette .castle .date,
+.vignette .western .date,
+.vignette .christmas .date,
+.vignette .seize .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
 
 
 
@@ -366,19 +533,27 @@ body{
 
 /*EXHIBITIONS*/
 
-.exhibitions>ul{
-    text-decoration: none;
+.vignette .bousies:hover,
+.vignette .divion:hover{
+    transform: scale(1.05);
 }
 
-.exhibitions ul li{
-    margin: 10;
-    font-weight: 600;
-    display: inline-block;
-    list-style: none;
-    transition: background-color 0.5s ease-in-out ;
+.vignette .bousies .description,
+.vignette .divion .description{
+    width: 256px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
 }
 
-
+.vignette .bousies .date,
+.vignette .divion .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
 
 
 
@@ -394,14 +569,13 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50vh;
+    height: 40vh;
   }
 
 .square {
     width: 150px;
-    height: auto;
-    background-color: white;
-    border: 2px solid #ccc;
+    height: 150px;
+    background-color: #003693;
     border-radius: 10px;
     display: flex;
     flex-direction: column; /* Les éléments sont affichés en colonne */
@@ -423,4 +597,5 @@ body{
 
 .square p {
     margin-top: 10px; /* Espace entre l'image et le texte */
+    color: white;
 }
