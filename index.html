@@ -79,19 +79,19 @@
                 <div class="number">
                     <p>945</p>
                 </div>
-                <p>Nombre de sets achetées</p>
+                <p>Number of sets purchased</p>
             </div>
             <div class="stats">
                 <div class="number">
                     <p>100</p>
                 </div>
-                <p>Superficie d'exposition</p>
+                <p>Exhibition area (m²)</p>
             </div>
             <div class="stats">
                 <div class="number">
                     <p>18</p>
                 </div>
-                <p>Nombre d'anneées</p>
+                <p>Number of year of LEGO</p>
             </div>
         </div>
         
@@ -102,13 +102,13 @@
         </div>
         <div class="lexicon">
             <ul>
-                <li>AFOL : pour « Adult Fan Of LEGO », un adulte passionné de LEGO.</li>
-                <li>TFOL : pour « Teenager Fan Of LEGO », un adolescent passionné de LEGO.</li>
-                <li>Minifig ou minifigure ou MF : les personnages LEGO.</li>
-                <li>Set : boîte Lego officielle, notée par sa référence.</li>
+                <li>AFOL : for 'Adult Fan Of LEGO' or AFOL, an adult who is passionate about LEGO.</li>
+                <li>TFOL : for 'Teenager Fan Of LEGO' or TFOL, an adolescent who is passionate about LEGO.</li>
+                <li>Minifig or minifigure or MF: the LEGO characters.</li>
+                <li>Set: an official LEGO box, identified by its reference number.</li>
                 <li>MOC : Acronym used for the expression My Own Creation. This term is widely used by LEGO fans to identify any type of creation, whether virtual or physical but always based on LEGO bricks. By extension, those who create MOCs are generally called MOCers.
                 </li>
-                <li>MOD : modification d’un set officiel pour le personnaliser, l’améliorer, etc…</li>
+                <li>MOD: Modification of an official set to personalize it, improve it, etc.</li>
                 <li>Diorama : Term used to designate a large format scene featuring buildings, machines, characters, etc ... on a given theme and reconstructed using LEGO pieces. This term is widely used during exhibitions organized by fan associations.
                 </li>
                 <li>Vignette : Term used to refer to a scene on a given theme created using LEGO parts and generally presented on a basis of 8 studs (studs) x 8 studs (tenons). This format was very fashionable a few years ago, especially during competitions organized by different groups of fans to force MOCers to be creative and define a global constraint applicable to all participants.
@@ -121,18 +121,20 @@
         <div class="title2">
             <H2>COMMENTS</H2>
         </div>
-        <div class="Commentaires">
-            <form id="comment-form">
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+        <div class="commentaires">
+            <form action="contacts.php" method="post" class="form-contacts">
+                <div class="form-top">
+                    <div>
+                        <input type="text" name="nom" placeholder="Name">
+                    </div>
+                    <div>
+                        <input type="email" name="email" placeholder="your.mail@mail.com">
+                    </div>
                 </div>
-                <div>
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" rows="4" required></textarea>
+                <div class="for-bottom">
+                    <input type="submit" name="submit" value="Submit">
                 </div>
-                <button type="submit">Submit</button>
-                </form>
+            </form>
         </div>
     </div>
 
