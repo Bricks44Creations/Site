@@ -489,14 +489,28 @@ body{
 .vignette .hulk:hover,
 .vignette .spaghettis:hover,
 .vignette .shangchi:hover,
-.vignette .shamballa:hover{
+.vignette .shamballa:hover,
+.vignette .loki:hover,
+.vignette .steve:hover,
+.vignette .ironheart:hover,
+.vignette .everest:hover,
+.vignette .mark1:hover,
+.vignette .timetravel:hover,
+.vignette .snow:hover{
     transform: scale(1.05);
 }
 
 .vignette .hulk .description,
 .vignette .spaghettis .description,
 .vignette .shangchi .description,
-.vignette .shamballa .description{
+.vignette .shamballa .description,
+.vignette .loki .description,
+.vignette .steve .description,
+.vignette .ironheart .description,
+.vignette .everest .description,
+.vignette .mark1 .description,
+.vignette .timetravel .description,
+.vignette .snow .description{
     width: 256px;
     text-align: left;
     overflow-wrap: break-word;
@@ -506,7 +520,14 @@ body{
 .vignette .hulk .date,
 .vignette .spaghettis .date,
 .vignette .shangchi .date,
-.vignette .shamballa .date{
+.vignette .shamballa .date,
+.vignette .loki .date,
+.vignette .steve .date,
+.vignette .ironheart .date,
+.vignette .everest .date,
+.vignette .mark1 .date,
+.vignette .timetravel .date,
+.vignette .snow .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
@@ -514,7 +535,24 @@ body{
     font-size: small;
 }
 
+.vignette .buildinghouse:hover{
+    transform: scale(1.05);
+}
 
+.vignette .buildinghouse .description{
+    width: 256px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette .buildinghouse .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
 
 
 
