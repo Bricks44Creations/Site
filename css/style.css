@@ -486,8 +486,33 @@ body{
     transform: translateX(12px);
 }
 
+.vignette .hulk:hover,
+.vignette .spaghettis:hover,
+.vignette .shangchi:hover,
+.vignette .shamballa:hover{
+    transform: scale(1.05);
+}
 
+.vignette .hulk .description,
+.vignette .spaghettis .description,
+.vignette .shangchi .description,
+.vignette .shamballa .description{
+    width: 256px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
 
+.vignette .hulk .date,
+.vignette .spaghettis .date,
+.vignette .shangchi .date,
+.vignette .shamballa .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
 
 
 
