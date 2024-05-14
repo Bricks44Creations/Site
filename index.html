@@ -121,20 +121,21 @@
         <div class="title2">
             <H2>COMMENTS</H2>
         </div>
-        <div class="commentaires">
-            <form action="contacts.php" method="post" class="form-contacts">
-                <div class="form-top">
-                    <div>
-                        <input type="text" name="nom" placeholder="Name">
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="your.mail@mail.com">
-                    </div>
+        <div class="comment-section">
+            <div class="input-section">
+                <h2>Laisser un commentaire</h2>
+                <form id="comment-form">
+                    <input type="text" id="name" placeholder="Votre nom" required>
+                    <textarea id="comment" placeholder="Votre commentaire" required></textarea>
+                    <button type="submit">Publier</button>
+                </form>
+            </div>
+            <div class="display-section">
+                <h3>Commentaires</h3>
+                <div id="comments-container">
+                    <!-- Les commentaires s'afficheront ici -->
                 </div>
-                <div class="for-bottom">
-                    <input type="submit" name="submit" value="Submit">
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 
@@ -165,6 +166,8 @@
         sidebar.classList.toggle('active');
     };
 </script>
+
+<script src="./js/comments.js"></script>
 
 <script src="./js/script.js"></script>
 <script src="./js/search.js"></script>
