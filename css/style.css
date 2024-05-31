@@ -8,7 +8,7 @@
 /* HEADER */
 
 header{
-    position:absolute;
+    position:fixed;
     background-color: #dedede;
     top: 0;
     left: 0;
@@ -17,6 +17,7 @@ header{
     width: 100%;
     height: 60px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    z-index: 999;
 }
 
 #searchInput {
@@ -74,12 +75,13 @@ header>a{
 footer{
     position:relative;
     height: 130px;
-    width: 100%;
+    width: 106.1%;
     background-color: #dedede;
     bottom: 0;
-    left: 0;
+    left: -4.5%;
     display: flex;
     justify-content: center;
+    z-index: 999;
 }
 
 footer>*{
@@ -142,18 +144,20 @@ footer p{
 /* SIDEBAR */
 
 .sidebar {
-    position: absolute;
-    top: 60;
+    position:fixed;
+    top: 0;
     left: 0px;
     min-height: 115vh;
     width: 80px;
     background-color: #003693;
     padding: 0.4rem 0.8rem;
     transition: all 0.5s ease;
+    z-index: 500;
 }
 
 @media (min-height: 100%) {
 }
+
 
 .sidebar.active{
     width: 250px;
@@ -162,7 +166,7 @@ footer p{
 .sidebar #btn{
     position: absolute;
     color: #fff;
-    top: .4rem;
+    top: 70px;
     left: 50%;
     font-size: 1.2rem;
     line-height: 50px;
@@ -182,6 +186,7 @@ footer p{
     align-items: center;
     pointer-events: none;
     opacity: 0;
+    transform: translateY(65px);
 }
 
 .sidebar.active .top .name{
@@ -195,6 +200,7 @@ footer p{
 .sidebar ul li{
     position: relative;
     list-style-type: none;
+    top: 60px;
     height: 50px;
     width: 90%;
     margin: 0.8rem auto;
@@ -270,22 +276,42 @@ footer p{
     background-color: #ffffff;
     min-height: 105vh;
     top: 0;
-    left: 80px;
+    left: 62px;
     transition: all 0.5s ease;
-    width: calc(100% - 80px);
+    width: calc(100% - 42px);
     padding: 1rem;
+    z-index: 1;
 }
 
-.sidebar.active ~ .main-content{
-    left: 250px;
-    width: calc(100% - 250px);
+.main-content .voile{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Couleur du voile */
+    z-index: 1;
+    opacity: 0;
+    pointer-events:none;
+    transition: opacity 0.5s ease;
 }
+
+.sidebar.active ~ .main-content .voile {
+    opacity: 1;
+    pointer-events: all; /* Toujours permettre de cliquer à travers le voile */
+}
+
+/*
+.sidebar.active ~ .main-content{
+    left: 235px;
+    width: calc(100% - 220px);
+}*/
 
 body{
     margin: 0;
     padding: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 90px;
     height: 100%;
 }
@@ -295,7 +321,7 @@ body{
     font-size: x-large;
     color: #003693;
     position:relative;
-    z-index: 900;
+    z-index: 10;
 }
 
 .title2 { 
@@ -303,7 +329,7 @@ body{
     font-size: large;
     color: #003693;
     position:relative;
-    z-index: 900;
+    z-index: 10;
 }
 
 
@@ -313,75 +339,12 @@ body{
 
 
 
-
-
-
-/*HOME*/
-/*STATS*/
-
-.gallery-stats {
-    width: 100%;
-    height: 350px;
-    background-image: url(../img/home.jpg);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    top: 10%;
-    background-size: cover;
-    margin-top: 10px;
-}
-
-.stats {
-    width: 200px;
-    height: 150px;
-    background-color: #fff; /* Remplacez 'votre-image.jpg' par le chemin de votre image */
-    background-size: cover; /* Pour s'assurer que l'image couvre tout l'arrière-plan */
-    background-repeat: no-repeat; /* Pour éviter que l'image se répète */
-    background-position: center; /* Pour centrer l'image */
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; /* Les éléments sont affichés en colonne */
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Alignement du texte au centre */
-    transition: transform 0.3s ease;
-}
-  
-.stats:hover {
-    transform: scale(1.1);
-}
-
-.stats .number {
-    font-size: xx-large;
-    color: black;
-}
-
-.stats p {
-    color: black;
-    margin-top: 10px; /* Espace entre le nombre et le texte */
-}
-
-
-
-
-/*LEXICON*/
-
-.lexicon>ul{
-    text-decoration: none;
-}
-
-.lexicon ul li{
-    margin: 10;
-    font-weight: 600;
-    list-style: none;
-}
 
 
 
 
 /*COMMENTS*/
 
-/* styles.css */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -417,6 +380,7 @@ input, textarea {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
+    resize: none;
 }
 
 button {
@@ -429,7 +393,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838;
+    background-color:#333;
 }
 
 .comment {
@@ -446,6 +410,7 @@ button:hover {
 
 .comment .name {
     font-weight: bold;
+    resize: none;
 }
 
 .comment .date {
@@ -467,15 +432,25 @@ button:hover {
 
 
 
-.vignette {
+.vignette{
+    justify-content:space-between;
     display: flex;
-    flex-wrap: wrap; /*ùpour que les éléments ne dépassent pas la largeur d'une fenêtre*/
+    flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
     flex-direction: row; /* Les éléments sont affichés en colonne */
     text-align: center; /* Alignement du texte au centre */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.vignette_expo{
+    display: flex;
+    flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
+    flex-direction: row; /* Les éléments sont affichés en colonne */
+    text-align: center; /* Alignement du texte au centre */
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .vignette a img{
-    flex-basis: calc(25% - 20px);
+    flex-basis: calc(25% - 25px);
     background-size: cover; /* l'image couvre entièrement la vignette*/
     box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
     margin: 10px;
@@ -490,6 +465,21 @@ button:hover {
     transition: transform 0.3s ease;
 }
 
+.vignette_expo a img{
+    flex-basis: calc(25% - 20px);
+    background-size: cover; /* l'image couvre entièrement la vignette*/
+    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
+    margin: 10px;
+    border: 1px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    width: 128px;
+    height:183px;
+    justify-content: center;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
 
 
 
@@ -552,7 +542,6 @@ button:hover {
 .vignette .snow .description,
 .vignette .void .description,
 .vignette .asgard .description{
-    width: 256px;
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
@@ -606,36 +595,18 @@ button:hover {
 
 /*TIPS*/
 
-.vignette .rock:hover{
+.vignette .Tips:hover{
     transform: scale(1.05);
 }
 
-.vignette .rock .description,
-.vignette .city .description,
-.vignette .marvel .description,
-.vignette .jurassicpark .description,
-.vignette .space .description,
-.vignette .ninjago .description,
-.vignette .castle .description,
-.vignette .western .description,
-.vignette .christmas .description
-.vignette .seize .description{
+.vignette .Tips .description{
     width: 256px;
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
 }
 
-.vignette .rock .date,
-.vignette .city .date,
-.vignette .marvel .date,
-.vignette .jurassicpark .date,
-.vignette .space .date,
-.vignette .ninjago .date,
-.vignette .castle .date,
-.vignette .western .date,
-.vignette .christmas .date,
-.vignette .seize .date{
+.vignette .Tips .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
@@ -652,26 +623,26 @@ button:hover {
 
 
 
-/*EXHIBITIONS*/
+/*CONVENTIONS*/
 
-.vignette .bousies:hover,
-.vignette .divion:hover,
-.vignette .escaudoeuvres:hover{
+.vignette_expo .bousies:hover,
+.vignette_expo .divion:hover,
+.vignette_expo .escaudoeuvres:hover{
     transform: scale(1.05);
 }
 
-.vignette .bousies .description,
-.vignette .divion .description,
-.vignette .escaudoeuvres .description{
-    width: 256px;
+.vignette_expo .bousies .description,
+.vignette_expo .divion .description,
+.vignette_expo .escaudoeuvres .description{
+    width: 150px;
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
 }
 
-.vignette .bousies .date,
-.vignette .divion .date,
-.vignette .escaudoeuvres .date{
+.vignette_expo .bousies .date,
+.vignette_expo .divion .date,
+.vignette_expo .escaudoeuvres .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
@@ -684,7 +655,7 @@ button:hover {
     margin: 0;
     padding: 0;
     width: 350px;
-    height: 300px;
+    height: 265px;
     overflow: hidden;
     float: right;
 }

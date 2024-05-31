@@ -11,6 +11,7 @@ function adjustSidebarHeight() {
     var contentHeight = document.querySelector('.main-content').offsetHeight;
     var windowHeight = window.innerHeight;
     var safe = 100;
+    var sidebar = document.getElementById("sidebar");
 
     // Si la hauteur du contenu est supérieure à la hauteur de la fenêtre, ajuster la hauteur de la sidebar
     if (contentHeight > windowHeight) {

@@ -8,3 +8,5 @@ function toggleSidebar() {
   sidebar.classList.toggle('active');
   adjustContentWidth();
 }
+
+
