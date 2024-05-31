@@ -28,13 +28,6 @@
         <ul>
             <li>
                 <a href="index.html">
-                    <i class="bx bxs-home"></i>
-                    <span class="nav-item">Home</span>
-                </a>
-                <span class="tooltip">Home</span>
-            </li>
-            <li>
-                <a href="portfolio.html">
                     <i class="bx bxs-photo-album"></i>
                     <span class="nav-item">Portfolio</span>
                 </a>
@@ -48,11 +41,11 @@
                 <span class="tooltip">Tips</span>
             </li>
             <li>
-                <a href="exhibitions.html">
+                <a href="conventions.html">
                     <i class="bx bx-share-alt"></i>
-                    <span class="nav-item">Exhibitions</span>
+                    <span class="nav-item">Conventions</span>
                 </a>
-                <span class="tooltip">Exhibitions</span>
+                <span class="tooltip">Conventions</span>
             </li>
             <li>
                 <a href="contacts.html">
@@ -100,21 +93,23 @@
         <div class="title2">
             <H2>COMMENTS</H2>
         </div>
-        <div class="commentaires">
-            <form action="contacts.php" method="post" class="form-contacts">
-                <div class="form-top">
-                    <div>
-                        <input type="text" name="nom" placeholder="Name">
-                    </div>
-                    <div>
-                        <input type="email" name="email" placeholder="your.mail@mail.com">
-                    </div>
+        <div class="comment-section">
+            <div class="input-section">
+                <h2>Leave your comment here</h2>
+                <form id="comment-form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <textarea id="comment" placeholder="Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="display-section">
+                <h3>Comments</h3>
+                <div id="comments-container">
+                    <!-- Les commentaires s'afficheront ici -->
                 </div>
-                <div class="for-bottom">
-                    <input type="submit" name="submit" value="Submit">
-                </div>
-            </form>
+            </div>
         </div>
+        <div class="voile"></div>
     </div>
 
     <footer>
@@ -133,6 +128,10 @@
             For the rest, the owners of the respective brands mentioned on the site remain the owners and it is very well like that <br>
             LEGO® is a registered trademark of The LEGO Group which does not sponsor, authorize or endorse this site.</p>
     </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js"></script>
+
 </body>
 
 <script>
@@ -144,8 +143,10 @@
     };
 </script>
 
+
 <script src="./js/script.js"></script>
 <script src="./js/search.js"></script>
 <script src="./js/taille-sidebar.js"></script>
+
 
 </html>
