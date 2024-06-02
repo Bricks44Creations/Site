@@ -784,6 +784,7 @@ body{
     position: absolute;
     top: 120px;
     right: 30px;
+    bottom: 30px;
     background-color: white;
     border-radius: 10px;
     padding-top: 35px;
