@@ -70,6 +70,24 @@ header>a{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 
 footer{
@@ -122,6 +140,29 @@ footer p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* SEPARATOR */
 
 .separator{
@@ -130,6 +171,16 @@ footer p{
     width: 100%;
     margin: 20px 0px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -157,7 +208,6 @@ footer p{
 
 @media (min-height: 100%) {
 }
-
 
 .sidebar.active{
     width: 250px;
@@ -205,6 +255,17 @@ footer p{
     width: 90%;
     margin: 0.8rem auto;
     line-height: 50px;   
+}
+.sidebar ul .cache{
+    position: relative;
+    list-style-type: none;
+    top: 60px;
+    height: 50px;
+    width: 90%;
+    margin: 0.8rem auto;
+    line-height: 50px;  
+    opacity: 0; 
+    pointer-events: none;
 }
 
 .sidebar ul li a{
@@ -270,10 +331,26 @@ footer p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MAIN CONTENT*/
 .main-content{
     position: relative;
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     min-height: 105vh;
     top: 0;
     left: 62px;
@@ -301,12 +378,6 @@ footer p{
     pointer-events: all; /* Toujours permettre de cliquer à travers le voile */
 }
 
-/*
-.sidebar.active ~ .main-content{
-    left: 235px;
-    width: calc(100% - 220px);
-}*/
-
 body{
     margin: 0;
     padding: 0;
@@ -331,6 +402,534 @@ body{
     position:relative;
     z-index: 10;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIGNETTES*/
+
+.vignette{
+    justify-content:flex-start;
+    display: flex;
+    flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
+    flex-direction: row; /* Les éléments sont affichés en colonne */
+    text-align: center; /* Alignement du texte au centre */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.vignette a img{
+    flex-basis: calc(25% - 25px);
+    background-size: cover; /* l'image couvre entièrement la vignette*/
+    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
+    margin: 10px;
+    border: 1px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    width: 256px;
+    height:144px;
+    justify-content: center;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIGNETTES PORTFOLIO*/
+
+.vignette .city:hover,
+.vignette .marvel:hover,
+.vignette .jurassicpark:hover,
+.vignette .space:hover,
+.vignette .ninjago:hover,
+.vignette .castle:hover,
+.vignette .western:hover,
+.vignette .christmas:hover,
+.vignette .seize:hover,
+.vignette .others:hover{
+    transform: scale(1.05);
+}
+
+.vignette .city .description,
+.vignette .marvel .description,
+.vignette .jurassicpark .description,
+.vignette .space .description,
+.vignette .ninjago .description,
+.vignette .castle .description,
+.vignette .western .description,
+.vignette .christmas .description,
+.vignette .seize .description,
+.vignette .others .description{
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.img{
+    text-align: center;
+}
+
+.img a img{
+    display: inline-block;
+    width: 50%;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIGNETTES MARVEL*/
+
+.vignette .hulk:hover,
+.vignette .spaghettis:hover,
+.vignette .shangchi:hover,
+.vignette .shamballa:hover,
+.vignette .loki:hover,
+.vignette .steve:hover,
+.vignette .ironheart:hover,
+.vignette .everest:hover,
+.vignette .mark1:hover,
+.vignette .timetravel:hover,
+.vignette .snow:hover,
+.vignette .void:hover,
+.vignette .asgard:hover,
+.vignette .morgan:hover,
+.vignette .explorer:hover{
+    transform: scale(1.05);
+}
+
+.vignette .hulk .description,
+.vignette .spaghettis .description,
+.vignette .shangchi .description,
+.vignette .shamballa .description,
+.vignette .loki .description,
+.vignette .steve .description,
+.vignette .ironheart .description,
+.vignette .everest .description,
+.vignette .mark1 .description,
+.vignette .timetravel .description,
+.vignette .snow .description,
+.vignette .void .description,
+.vignette .asgard .description,
+.vignette .morgan .description,
+.vignette .explorer .description{
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette .hulk .date,
+.vignette .spaghettis .date,
+.vignette .shangchi .date,
+.vignette .shamballa .date,
+.vignette .loki .date,
+.vignette .steve .date,
+.vignette .ironheart .date,
+.vignette .everest .date,
+.vignette .mark1 .date,
+.vignette .timetravel .date,
+.vignette .snow .date,
+.vignette .void .date,
+.vignette .asgard .date,
+.vignette .morgan .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIGNETTES AUTRES*/
+
+.vignette .buildinghouse:hover,
+.vignette .explorer:hover{
+    transform: scale(1.05);
+}
+
+.vignette .buildinghouse .description,
+.vignette .explorer .description{
+    width: 256px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette .buildinghouse .date,
+.vignette .explorer .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TIPS*/
+
+.vignette .Tips:hover{
+    transform: scale(1.05);
+}
+
+.vignette .Tips .description{
+    width: 256px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette .Tips .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*VIGNETTES EXPO*/
+
+.vignette_expo a img{
+    flex-basis: calc(25% - 20px);
+    background-size: cover; /* l'image couvre entièrement la vignette*/
+    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
+    margin: 10px;
+    border: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 128px;
+    height:183px;
+    justify-content: center;
+    border-radius: 10px;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.vignette_expo{
+    display: flex;
+    flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
+    flex-direction: row; /* Les éléments sont affichés en colonne */
+    text-align: center; /* Alignement du texte au centre */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    margin-right: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+/*CONVENTIONS*/
+
+.vignette_expo .bousies:hover,
+.vignette_expo .divion:hover,
+.vignette_expo .escaudoeuvres:hover{
+    transform: scale(1.05);
+}
+
+.vignette_expo .bousies .description,
+.vignette_expo .divion .description,
+.vignette_expo .escaudoeuvres .description{
+    width: 150px;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette_expo .bousies .date,
+.vignette_expo .divion .date,
+.vignette_expo .escaudoeuvres .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
+
+.container-map{
+    padding: 15px;
+    width: 350px;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 120px;
+    right: 30px;
+    background-color: white;
+    border-radius: 10px;
+    padding-top: 35px;
+    padding-bottom:35px;
+}
+.map-expo img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style pour les affichages d'images */
+.thumbnail {
+    display: inline-block;
+    margin: 0px;
+}
+
+.thumbnail-image {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+}
+
+/* Style pour la lightbox */
+.lightbox {
+    display: none; /* Modifier pour cacher par défaut */
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox {
+    display: none;
+    /* Le reste de tes styles pour la lightbox... */
+}
+
+.lightbox-content {
+    top: 1;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    color: white;
+    z-index: 9999;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACTS*/
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+  }
+
+.square {
+    width: 150px;
+    height: 150px;
+    background-color: #003693;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Les éléments sont affichés en colonne */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Alignement du texte au centre */
+    transition: transform 0.3s ease;
+}
+  
+.square:hover {
+    transform: scale(1.1);
+}
+  
+.square img {
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.square p {
+    margin-top: 10px; /* Espace entre l'image et le texte */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -416,350 +1015,4 @@ button:hover {
 .comment .date {
     font-size: 0.8em;
     color: #999;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.vignette{
-    justify-content:space-between;
-    display: flex;
-    flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
-    flex-direction: row; /* Les éléments sont affichés en colonne */
-    text-align: center; /* Alignement du texte au centre */
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.vignette_expo{
-    display: flex;
-    flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
-    flex-direction: row; /* Les éléments sont affichés en colonne */
-    text-align: center; /* Alignement du texte au centre */
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.vignette a img{
-    flex-basis: calc(25% - 25px);
-    background-size: cover; /* l'image couvre entièrement la vignette*/
-    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
-    margin: 10px;
-    border: 1px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    width: 256px;
-    height:144px;
-    justify-content: center;
-    border-radius: 10px;
-    background-size: cover;
-    transition: transform 0.3s ease;
-}
-
-.vignette_expo a img{
-    flex-basis: calc(25% - 20px);
-    background-size: cover; /* l'image couvre entièrement la vignette*/
-    box-sizing: border-box; /* Pour inclure les marges et les bordures dans la largeur spécifiée */
-    margin: 10px;
-    border: 1px;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    width: 128px;
-    height:183px;
-    justify-content: center;
-    border-radius: 10px;
-    background-size: cover;
-    transition: transform 0.3s ease;
-}
-
-
-
-
-
-/*PORTFOLIO*/
-
-.vignette .city:hover,
-.vignette .marvel:hover,
-.vignette .jurassicpark:hover,
-.vignette .space:hover,
-.vignette .ninjago:hover,
-.vignette .castle:hover,
-.vignette .western:hover,
-.vignette .christmas:hover,
-.vignette .seize:hover{
-    transform: scale(1.05);
-}
-
-.vignette .city .description,
-.vignette .marvel .description,
-.vignette .jurassicpark .description,
-.vignette .space .description,
-.vignette .ninjago .description,
-.vignette .castle .description,
-.vignette .western .description,
-.vignette .christmas .description,
-.vignette .seize .description{
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-}
-
-.vignette .hulk:hover,
-.vignette .spaghettis:hover,
-.vignette .shangchi:hover,
-.vignette .shamballa:hover,
-.vignette .loki:hover,
-.vignette .steve:hover,
-.vignette .ironheart:hover,
-.vignette .everest:hover,
-.vignette .mark1:hover,
-.vignette .timetravel:hover,
-.vignette .snow:hover,
-.vignette .void:hover,
-.vignette .asgard:hover{
-    transform: scale(1.05);
-}
-
-.vignette .hulk .description,
-.vignette .spaghettis .description,
-.vignette .shangchi .description,
-.vignette .shamballa .description,
-.vignette .loki .description,
-.vignette .steve .description,
-.vignette .ironheart .description,
-.vignette .everest .description,
-.vignette .mark1 .description,
-.vignette .timetravel .description,
-.vignette .snow .description,
-.vignette .void .description,
-.vignette .asgard .description{
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-}
-
-.vignette .hulk .date,
-.vignette .spaghettis .date,
-.vignette .shangchi .date,
-.vignette .shamballa .date,
-.vignette .loki .date,
-.vignette .steve .date,
-.vignette .ironheart .date,
-.vignette .everest .date,
-.vignette .mark1 .date,
-.vignette .timetravel .date,
-.vignette .snow .date,
-.vignette .void .date,
-.vignette .asgard .date{
-    color: #696969;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-    font-size: small;
-}
-
-.vignette .buildinghouse:hover{
-    transform: scale(1.05);
-}
-
-.vignette .buildinghouse .description{
-    width: 256px;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-}
-
-.vignette .buildinghouse .date{
-    color: #696969;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-    font-size: small;
-}
-
-
-
-
-
-
-
-
-/*TIPS*/
-
-.vignette .Tips:hover{
-    transform: scale(1.05);
-}
-
-.vignette .Tips .description{
-    width: 256px;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-}
-
-.vignette .Tips .date{
-    color: #696969;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-    font-size: small;
-}
-
-
-
-
-
-
-
-
-
-
-/*CONVENTIONS*/
-
-.vignette_expo .bousies:hover,
-.vignette_expo .divion:hover,
-.vignette_expo .escaudoeuvres:hover{
-    transform: scale(1.05);
-}
-
-.vignette_expo .bousies .description,
-.vignette_expo .divion .description,
-.vignette_expo .escaudoeuvres .description{
-    width: 150px;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-}
-
-.vignette_expo .bousies .date,
-.vignette_expo .divion .date,
-.vignette_expo .escaudoeuvres .date{
-    color: #696969;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-    font-size: small;
-}
-
-.container-map{
-    bottom: 0;
-    margin: 0;
-    padding: 0;
-    width: 350px;
-    height: 265px;
-    overflow: hidden;
-    float: right;
-}
-.map-expo img{
-    width: 100%;
-    height: auto;
-}
-
-/* Style pour les miniatures */
-.thumbnail {
-    display: inline-block;
-    margin: 0px;
-}
-
-.thumbnail-image {
-    width: 160px;
-    height: 90px;
-    object-fit: cover;
-}
-
-/* Style pour la lightbox */
-.lightbox {
-    display: none; /* Modifier pour cacher par défaut */
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.lightbox {
-    display: none;
-    /* Le reste de tes styles pour la lightbox... */
-}
-
-.lightbox-content {
-    max-width: 80%;
-    max-height: 80%;
-}
-
-.close {
-    color: white;
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.close:hover,
-.close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-/*CONTACTS*/
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 40vh;
-  }
-
-.square {
-    width: 150px;
-    height: 150px;
-    background-color: #003693;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column; /* Les éléments sont affichés en colonne */
-    justify-content: center;
-    align-items: center;
-    text-align: center; /* Alignement du texte au centre */
-    transition: transform 0.3s ease;
-}
-  
-.square:hover {
-    transform: scale(1.1);
-}
-  
-.square img {
-    margin-top: 10px;
-    width: 80px;
-    height: 80px;
-}
-
-.square p {
-    margin-top: 10px; /* Espace entre l'image et le texte */
-    color: white;
 }
