@@ -426,7 +426,6 @@ body{
 
 
 
-
 /*VIGNETTES*/
 
 .vignette{
@@ -511,7 +510,7 @@ body{
 .img a img{
     display: inline-block;
     width: 50%;
-    pointer-events: none;
+    pointer-events: all;
 }
 
 .container-notice{
@@ -519,20 +518,31 @@ body{
     height: auto;
     overflow: hidden;
     position: absolute;
-    top: 110px;
+    top: 25%;
     right: 15px;
-    background-color: white;
-    border-radius: 10px;
+    background-color: #003693;
     padding-top: 5px;
-    padding-bottom:5px;
+    padding-bottom:15px;
     text-align: center;
-    font-size: large;
-    color: #003693;
+    color: white;
     padding-left: 5px;
+    border-width: 3px;   /* Largeur de la bordure */
+    border-style: solid; /* Style de la bordure (solid, dashed, dotted, double, etc.) */
+    border-color: black;  /* Couleur de la bordure */
 }
+
+
 
 .container-notice .notice{
     text-align: left;
+}
+
+.container-notice .notice a{
+    color: white;
+}
+
+.container-notice .notice a:active{
+    color: #dedede;
 }
 
 
@@ -574,7 +584,9 @@ body{
 .vignette .morgan:hover,
 .vignette .explorer:hover,
 .vignette .stories:hover,
-.vignette .throne:hover{
+.vignette .throne:hover,
+.vignette .tomb:hover,
+.vignette .myback:hover{
     transform: scale(1.05);
 }
 
@@ -594,7 +606,9 @@ body{
 .vignette .morgan .description,
 .vignette .explorer .description,
 .vignette .stories .description,
-.vignette .throne .description{
+.vignette .throne .description,
+.vignette .tomb .description,
+.vignette .myback .description{
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
@@ -615,7 +629,9 @@ body{
 .vignette .asgard .date,
 .vignette .morgan .date,
 .vignette .stories .date,
-.vignette .throne .date{
+.vignette .throne .date,
+.vignette .tomb .date,
+.vignette .myback .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
