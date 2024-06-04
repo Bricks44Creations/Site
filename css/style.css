@@ -1067,18 +1067,19 @@ button:hover {
 @media screen and (max-width: 600px){
     header{
         height: 50px;
+        width: 100%;
     }
 
     #searchInput {
         height: 20px;
         width: 25%;
         min-width: 100px;
-        right: 2px; 
+        right: 5px; 
     }
     #searchButton {
         height: 20px;
         width: 10px;
-        right: 2px;
+        right: 5px;
     }
     header i{
         transform: scale(1);
@@ -1098,11 +1099,30 @@ button:hover {
     }
     footer{
         height: 300px;
+        width: 100%;
+        left: 0px;
+        margin: 0px;
     }
     footer .lien{
         display: flex;
         flex-direction: column;
         align-items: initial;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        margin-top: 50px;
+        margin-bottom: 300px;
+        margin-left: 80px;
+        height: 100%;
+        width: calc(100% - 80px);
+    }
+    .main-content{
+        padding: 0px;
+        z-index: 1;
+    }
+    .separator{
+        width: 90%;
     }
 
     .vignette{
@@ -1123,5 +1143,5 @@ button:hover {
     .vignette .seize .description,
     .vignette .others .description{
         text-align: center;
-}
+    }
 }
