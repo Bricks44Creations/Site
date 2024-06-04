@@ -23,7 +23,8 @@ header{
 #searchInput {
     position: absolute;
     height: 30px;
-    width: 300px;
+    width: 25%;
+    min-width: 200px;
     top: 15px; /* Ajustez la position verticale selon vos besoins */
     right: 20px; /* Ajustez la position horizontale selon vos besoins */
 }
@@ -44,7 +45,7 @@ header i{
 
 header img{
     margin-top: auto;
-    margin-left: 50px;
+    margin-left: 30px;
     width: 55;
     font-size: large;
 }
@@ -1060,4 +1061,67 @@ button:hover {
 .comment .date {
     font-size: 0.8em;
     color: #999;
+}
+
+
+@media screen and (max-width: 600px){
+    header{
+        height: 50px;
+    }
+
+    #searchInput {
+        height: 20px;
+        width: 25%;
+        min-width: 100px;
+        right: 2px; 
+    }
+    #searchButton {
+        height: 20px;
+        width: 10px;
+        right: 2px;
+    }
+    header i{
+        transform: scale(1);
+        text-align: center;
+        transform: translateY(-7px);
+    }
+    header img{
+        margin-left: 10px;
+        width: 35;
+        margin-top: 7.5px;
+    }
+    header p{
+        margin-left: 60px;
+    }
+    .sidebar.active{
+        width: 100%;
+    }
+    footer{
+        height: 300px;
+    }
+    footer .lien{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .vignette{
+        flex-direction: column;
+        text-align: center;
+    }
+    .img a img{
+        width: 80%;
+    }
+    .vignette .city .description,
+    .vignette .marvel .description,
+    .vignette .jurassicpark .description,
+    .vignette .space .description,
+    .vignette .ninjago .description,
+    .vignette .castle .description,
+    .vignette .western .description,
+    .vignette .christmas .description,
+    .vignette .seize .description,
+    .vignette .others .description{
+        text-align: center;
+}
 }
