@@ -91,35 +91,32 @@ header p{
 /* FOOTER */
 
 footer>*{
-    bottom: 0;
     position: absolute;
-    padding: 0;
-    margin: 0;
+    bottom: 0px;
 }
 
 footer{
-    position:relative;
-    height: 130px;
-    width: 100%;
+    position: relative;
     background-color: #dedede;
-    bottom: 0;
+    height: 120px;
+    width: 105.65%;
+    left: -4%; /*parce qu'il y a des marges je comprend pas pourquoi*/
+    bottom: -22px; /*parce qu'il y a des marges je comprend pas pourquoi*/
     display: flex;
     justify-content: center;
     z-index: 999;
-    padding-left:0px;
 }
 
 footer .lien{
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
 footer .lien a {
     margin-right: 10px; /* Espacement entre les liens */
     margin-left: 10px;
     color: black;
-    transform: translateY(-80px);
+    transform: translateY(-65px);
 }
 
 footer .lien img{
@@ -197,7 +194,7 @@ footer p{
 
 .sidebar {
     position:fixed;
-    top: 0;
+    top: 0px;
     left: 0px;
     min-height: 115vh;
     width: 80px;
@@ -351,18 +348,20 @@ footer p{
 /*MAIN CONTENT*/
 .main-content{
     position: relative;
-    background-color: #f9f9f9;
-    min-height: 105vh;
-    top: 0;
-    left: 62px;
+    background-color: #f4f4f4;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: -22px;
+    height: auto;
+    min-height: 105vh; /*pour que ça fasse minimum une page en entier*/
     transition: all 0.5s ease;
-    width: calc(100% - 42px);
+    width: calc(100% - 40px);
     padding: 1rem;
     z-index: 1;
 }
 
 .main-content .voile{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -376,17 +375,9 @@ footer p{
 
 .sidebar.active ~ .main-content .voile {
     opacity: 1;
-    pointer-events: all; /* Toujours permettre de cliquer à travers le voile */
+    pointer-events: all; /* ne pas permettre de cliquer à travers le voile */
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 40px;
-    margin-bottom: 90px;
-    height: 100%;
-}
 
 .title { 
     width: 100%;
@@ -1074,12 +1065,12 @@ button:hover {
         height: 20px;
         width: 25%;
         min-width: 100px;
-        right: 5px; 
+        right: 20px; 
     }
     #searchButton {
         height: 20px;
         width: 10px;
-        right: 5px;
+        right: 20px;
     }
     header i{
         transform: scale(1);
@@ -1087,48 +1078,64 @@ button:hover {
         transform: translateY(-7px);
     }
     header img{
-        margin-left: 10px;
+        margin-left: 20px;
         width: 35;
         margin-top: 7.5px;
     }
     header p{
         margin-left: 60px;
     }
-    .sidebar.active{
-        width: 100%;
-    }
     footer{
-        height: 300px;
-        width: 100%;
-        left: 0px;
-        margin: 0px;
+        height: 370px;
+        width: 108.5%;
+        left: -4%; /*parce qu'il y a des marges je comprend pas pourquoi*/
+        bottom: -22px; /*parce qu'il y a des marges je comprend pas pourquoi*/
+        display: flex;
+        justify-content: center;
     }
+
     footer .lien{
         display: flex;
         flex-direction: column;
-        align-items: initial;
+        top: 80px;
     }
-    body{
-        margin: 0;
-        padding: 0;
-        margin-top: 50px;
-        margin-bottom: 300px;
-        height: 100%;
+    footer .lien a {
+        color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 2px;
     }
-    .main-content{
-        padding: 0px;
-        z-index: 1;
+    
+    footer .lien img{
+        width: 30;
+        margin-top: 10px;
+        transform: translateX(20px);
     }
+    
+    footer p{
+        bottom: 10px;
+        width: 80%;
+        text-align: center;
+        font-size: xx-small;
+    }
+    .sidebar.active{
+        width: 100%;
+    }
+
     .separator{
         width: 90%;
     }
 
-    .vignette{
-        flex-direction: column;
-        text-align: center;
+    .main-content{
+        width: calc(100% - 46px);
     }
-    .img a img{
-        width: 80%;
+
+    .vignette{
+        justify-content:center;
+        flex-direction: column; /* Les éléments sont affichés en colonne */
+        text-align: center; /* Alignement du texte au centre */
     }
     .vignette .city .description,
     .vignette .marvel .description,
@@ -1141,5 +1148,11 @@ button:hover {
     .vignette .seize .description,
     .vignette .others .description{
         text-align: center;
+        overflow-wrap: break-word;
+        transform: translateX(0px);
+    }
+    .img a img{
+        width: 80%;
+        pointer-events: none;
     }
 }
