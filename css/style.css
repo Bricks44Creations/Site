@@ -12,11 +12,8 @@ header{
     background-color: #dedede;
     top: 0;
     left: 0;
-    margin: 0;
-    padding: 0;
     width: 100%;
     height: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     z-index: 999;
 }
 
@@ -25,41 +22,43 @@ header{
     height: 30px;
     width: 25%;
     min-width: 200px;
-    top: 15px; /* Ajustez la position verticale selon vos besoins */
-    right: 20px; /* Ajustez la position horizontale selon vos besoins */
+    top: 15px;
+    right: 15px;
+    pointer-events: text;
 }
 #searchButton {
     position: absolute;
     background-color :#003693;
     height: 30px;
-    width: 30px;
-    top: 15px; /* Ajustez la position verticale selon vos besoins */
-    right: 20px; /* Ajustez la position horizontale selon vos besoins */
+    width: 20px;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 header i{
-    text-align: center;
+    position: absolute;
     color: #fff;
     transform: scale(2);
 }
 
 header img{
-    margin-top: auto;
-    margin-left: 30px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 12.5px;
     width: 55;
-    font-size: large;
 }
 
 header p{
-    margin-left: 120px;
-    top: 10px;
+    position: absolute;
+    height: 30px;
+    margin-left: 100px;
     color: #003693;
-    transform: translateY(-35px);
+    top: 20px;
+    font-size: large;
 }
 
-header>a{
-    color: black;
-}
 
 
 
@@ -91,22 +90,23 @@ header>a{
 
 /* FOOTER */
 
-footer{
-    position:relative;
-    height: 130px;
-    width: 106.1%;
-    background-color: #dedede;
-    bottom: 0;
-    left: -4.5%;
-    display: flex;
-    justify-content: center;
-    z-index: 999;
-}
-
 footer>*{
     bottom: 0;
     position: absolute;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+footer{
+    position:relative;
+    height: 130px;
+    width: 100%;
+    background-color: #dedede;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    padding-left:0px;
 }
 
 footer .lien{
@@ -1113,9 +1113,7 @@ button:hover {
         padding: 0;
         margin-top: 50px;
         margin-bottom: 300px;
-        margin-left: 80px;
         height: 100%;
-        width: calc(100% - 80px);
     }
     .main-content{
         padding: 0px;
