@@ -586,7 +586,8 @@ body{
 .vignette .stories:hover,
 .vignette .throne:hover,
 .vignette .tomb:hover,
-.vignette .myback:hover{
+.vignette .myback:hover,
+.vignette .illuminati:hover{
     transform: scale(1.05);
 }
 
@@ -608,7 +609,8 @@ body{
 .vignette .stories .description,
 .vignette .throne .description,
 .vignette .tomb .description,
-.vignette .myback .description{
+.vignette .myback .description,
+.vignette .illuminati .description{
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
@@ -631,7 +633,8 @@ body{
 .vignette .stories .date,
 .vignette .throne .date,
 .vignette .tomb .date,
-.vignette .myback .date{
+.vignette .myback .date,
+.vignette .illuminati .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
