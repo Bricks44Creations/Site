@@ -360,6 +360,11 @@ footer p{
     z-index: 1;
 }
 
+.main-content #btn{
+    opacity: 0;
+    pointer-events: none;
+}
+
 .main-content .voile{
     position: fixed;
     top: 0;
@@ -1077,12 +1082,13 @@ button:hover {
         transform: translateY(-7px);
     }
     header img{
-        margin-left: 20px;
+        margin-left: 90px;
         width: 35;
         margin-top: 7.5px;
     }
     header p{
-        margin-left: 60px;
+        margin-left: 140px;
+        top: 30%;
     }
     footer{
         height: 370px;
@@ -1121,13 +1127,31 @@ button:hover {
     }
     .sidebar.active{
         width: 100%;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .sidebar{
+        z-index: 1000;
+        transform: translateX(-80px);
+    }
+
+    .sidebar #btn{
+        top: 2px;
+        transform: translateX(70px);
+        color: #003693;
+    }
+
+    .sidebar.active #btn{
+        transform: translate(0);
+        color: white;
     }
 
     .main-content{
+        margin-left: 0;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: calc(100% - 46px);
+        width: calc(100%);
     }
 
     .vignette{
@@ -1137,8 +1161,8 @@ button:hover {
     }
 
     .vignette a img{
-        width: 192px;
-        height:108px;
+        width: 256px;
+        height:144px;
     }
     .vignette .city .description,
     .vignette .marvel .description,
@@ -1200,4 +1224,15 @@ button:hover {
         width: 100%;
     }
 
+    .sidebar.active .top .name{
+        color: #003693;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+        pointer-events: none;
+        opacity: 1;
+        transform: translateY(-65px);
+        top:2px;
+    }
 }
