@@ -471,29 +471,11 @@ footer p{
 
 /*VIGNETTES PORTFOLIO*/
 
-.vignette .city:hover,
-.vignette .marvel:hover,
-.vignette .jurassicpark:hover,
-.vignette .space:hover,
-.vignette .ninjago:hover,
-.vignette .castle:hover,
-.vignette .western:hover,
-.vignette .christmas:hover,
-.vignette .seize:hover,
-.vignette .others:hover{
+.vignette .portfolio:hover{
     transform: scale(1.05);
 }
 
-.vignette .city .description,
-.vignette .marvel .description,
-.vignette .jurassicpark .description,
-.vignette .space .description,
-.vignette .ninjago .description,
-.vignette .castle .description,
-.vignette .western .description,
-.vignette .christmas .description,
-.vignette .seize .description,
-.vignette .others .description{
+.vignette .portfolio .description{
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
@@ -562,75 +544,19 @@ footer p{
 
 
 
-/*VIGNETTES MARVEL*/
+/*VIGNETTES*/
 
-.vignette .hulk:hover,
-.vignette .spaghettis:hover,
-.vignette .shangchi:hover,
-.vignette .shamballa:hover,
-.vignette .loki:hover,
-.vignette .steve:hover,
-.vignette .ironheart:hover,
-.vignette .everest:hover,
-.vignette .mark1:hover,
-.vignette .timetravel:hover,
-.vignette .snow:hover,
-.vignette .void:hover,
-.vignette .asgard:hover,
-.vignette .morgan:hover,
-.vignette .explorer:hover,
-.vignette .stories:hover,
-.vignette .throne:hover,
-.vignette .tomb:hover,
-.vignette .myback:hover,
-.vignette .illuminati:hover{
+.vignette .portoflio_children:hover{
     transform: scale(1.05);
 }
 
-.vignette .hulk .description,
-.vignette .spaghettis .description,
-.vignette .shangchi .description,
-.vignette .shamballa .description,
-.vignette .loki .description,
-.vignette .steve .description,
-.vignette .ironheart .description,
-.vignette .everest .description,
-.vignette .mark1 .description,
-.vignette .timetravel .description,
-.vignette .snow .description,
-.vignette .void .description,
-.vignette .asgard .description,
-.vignette .morgan .description,
-.vignette .explorer .description,
-.vignette .stories .description,
-.vignette .throne .description,
-.vignette .tomb .description,
-.vignette .myback .description,
-.vignette .illuminati .description{
+.vignette .portoflio_children .description{
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
 }
 
-.vignette .hulk .date,
-.vignette .spaghettis .date,
-.vignette .shangchi .date,
-.vignette .shamballa .date,
-.vignette .loki .date,
-.vignette .steve .date,
-.vignette .ironheart .date,
-.vignette .everest .date,
-.vignette .mark1 .date,
-.vignette .timetravel .date,
-.vignette .snow .date,
-.vignette .void .date,
-.vignette .asgard .date,
-.vignette .morgan .date,
-.vignette .stories .date,
-.vignette .throne .date,
-.vignette .tomb .date,
-.vignette .myback .date,
-.vignette .illuminati .date{
+.vignette .portoflio_children .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
@@ -639,45 +565,6 @@ footer p{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*VIGNETTES AUTRES*/
-
-.vignette .buildinghouse:hover,
-.vignette .explorer:hover{
-    transform: scale(1.05);
-}
-
-.vignette .buildinghouse .description,
-.vignette .explorer .description{
-    width: 256px;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-}
-
-.vignette .buildinghouse .date,
-.vignette .explorer .date{
-    color: #696969;
-    text-align: left;
-    overflow-wrap: break-word;
-    transform: translateX(12px);
-    font-size: small;
-}
 
 
 
@@ -725,6 +612,28 @@ footer p{
     font-size: small;
 }
 
+
+/*Instructions*/
+
+/*TIPS*/
+
+.vignette .instructions:hover{
+    transform: scale(1.05);
+}
+
+.vignette .instructions .description{
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+}
+
+.vignette .instructions .date{
+    color: #696969;
+    text-align: left;
+    overflow-wrap: break-word;
+    transform: translateX(12px);
+    font-size: small;
+}
 
 
 
@@ -791,24 +700,18 @@ footer p{
 
 /*CONVENTIONS*/
 
-.vignette_expo .bousies:hover,
-.vignette_expo .divion:hover,
-.vignette_expo .escaudoeuvres:hover{
+.vignette_expo .lieux:hover{
     transform: scale(1.05);
 }
 
-.vignette_expo .bousies .description,
-.vignette_expo .divion .description,
-.vignette_expo .escaudoeuvres .description{
+.vignette_expo .lieux .description{
     width: 150px;
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
 }
 
-.vignette_expo .bousies .date,
-.vignette_expo .divion .date,
-.vignette_expo .escaudoeuvres .date{
+.vignette_expo .lieux .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
@@ -1148,7 +1051,7 @@ button:hover {
     .main-content{
         margin-left: 0;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-direction: column;
         width: calc(100%);
     }
@@ -1157,24 +1060,38 @@ button:hover {
         justify-content:center;
         flex-direction: column; /* Les éléments sont affichés en colonne */
         text-align: center; /* Alignement du texte au centre */
-    }
+        }
 
     .vignette a img{
         width: 256px;
         height:144px;
     }
-    .vignette .city .description,
-    .vignette .marvel .description,
-    .vignette .jurassicpark .description,
-    .vignette .space .description,
-    .vignette .ninjago .description,
-    .vignette .castle .description,
-    .vignette .western .description,
-    .vignette .christmas .description,
-    .vignette .seize .description,
-    .vignette .others .description{
+    .vignette .portfolio .description{
         text-align: center;
         overflow-wrap: break-word;
+        transform: translateX(0px);
+    }
+
+    .vignette .portoflio_children .description{
+        text-align: center;
+        overflow-wrap: break-word;
+        transform: translateX(0px);
+    }
+    
+    .vignette .portoflio_children .date{
+        text-align: center;
+        overflow-wrap: break-word;
+        transform: translateX(0px);
+    }
+
+    .vignette .Tips .description{
+        text-align: center;
+        overflow-wrap: break-word;
+        transform: translateX(30%);
+    }
+    
+    .vignette .Tips .date{
+        text-align: center;
         transform: translateX(0px);
     }
 
@@ -1233,5 +1150,41 @@ button:hover {
         opacity: 1;
         transform: translateY(-65px);
         top:2px;
+    }
+
+    .vignette_expo a img{
+        width: 40%;
+        justify-content: center;
+    }
+    
+    .vignette_expo{
+        display: flex;
+        flex-wrap: wrap; /*pour que les éléments ne dépassent pas la largeur d'une fenêtre*/
+        flex-direction: column; /* Les éléments sont affichés en colonne */
+        text-align: center; /* Alignement du texte au centre */
+        margin-right: 0px;
+    }
+
+    .container-map{
+        padding: 0px;
+        width: 50%;
+        height: auto;
+        overflow: hidden;
+        left: 25%;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 10px;
+    }
+
+    .vignette_expo .lieux .description{
+        text-align: center;
+        transform: translateX(90%);
+    }
+    
+    .vignette_expo .lieux .date{
+        text-align: center;
+        transform: translateX(0px);
     }
 }
