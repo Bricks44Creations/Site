@@ -482,13 +482,18 @@ footer p{
 }
 
 .img{
+    display: flex;
     text-align: center;
 }
 
 .img a img{
     display: inline-block;
-    width: 50%;
     pointer-events: all;
+    flex-direction: row;
+    width: 50%;
+    min-width: 500px;
+    margin-bottom: 10px;
+
 }
 
 .container-notice{
