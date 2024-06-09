@@ -481,51 +481,34 @@ footer p{
     transform: translateX(12px);
 }
 
-.img{
+.contenu_page {
+    margin: 0;
     display: flex;
-    text-align: center;
 }
 
-.img a img{
-    display: inline-block;
-    pointer-events: all;
-    flex-direction: row;
-    width: 50%;
-    min-width: 500px;
-    margin-bottom: 10px;
-
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Espace entre les blocs */
 }
 
-.container-notice{
-    width: 23%;
-    height: auto;
+.bloc {
     overflow: hidden;
-    position: absolute;
-    top: 25%;
-    right: 15px;
-    background-color: #003693;
-    padding-top: 5px;
-    padding-bottom:15px;
-    text-align: center;
-    color: white;
-    padding-left: 5px;
-    border-width: 3px;   /* Largeur de la bordure */
-    border-style: solid; /* Style de la bordure (solid, dashed, dotted, double, etc.) */
-    border-color: black;  /* Couleur de la bordure */
-}
-
-
-
-.container-notice .notice{
+    width: calc(25% - 16px);
+    min-width: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
+    padding: 0;
+    margin-top: 5px;
 }
 
-.container-notice .notice a{
-    color: white;
-}
-
-.container-notice .notice a:active{
-    color: #dedede;
+.image {
+    width: 100%; /* L'image prend toute la largeur du bloc */
+    display: block;
+    background-size: cover;
 }
 
 
@@ -1191,5 +1174,9 @@ button:hover {
     .vignette_expo .lieux .date{
         text-align: center;
         transform: translateX(0px);
+    }
+
+    .bloc{
+        width: 100%;
     }
 }
