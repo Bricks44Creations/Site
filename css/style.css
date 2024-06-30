@@ -498,6 +498,7 @@ footer p{
 }
 
 .bloc {
+    position: relative;
     overflow: hidden;
     width: calc(25% - 16px);
     min-width: 200px;
@@ -583,6 +584,13 @@ footer p{
     right: 5%;
     width: 17%;
     height: 43%;
+}
+
+.monorail {
+    top: 75%;
+    left: 0%;
+    width: 40%;
+    height: 20%;
 }
 
 
