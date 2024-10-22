@@ -954,10 +954,10 @@ footer p{
 
 
 /*COMMENTS*/
-
 #disqus_thread {
-    margin-left: 80px;
-    margin-bottom: 50px;
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 body {
