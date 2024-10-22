@@ -148,6 +148,23 @@
 
         <div class="voile"></div>
 
+        <h1>Laisser un commentaire</h1>
+
+        <div class="comment-form">
+            <form id="commentForm">
+            <label for="name">Nom :</label><br>
+            <input type="text" id="name" required><br><br>
+            
+            <label for="comment">Commentaire :</label><br>
+            <textarea id="comment" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Soumettre</button>
+            </form>
+        </div>
+
+        <h2>Commentaires :</h2>
+        <div id="comments"></div>
+
         <div id="disqus_thread"></div>
     </div>
 
@@ -170,6 +187,51 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
+    <script>
+        const commentForm = document.getElementById('commentForm');
+        const commentsDiv = document.getElementById('comments');
+    
+        // Fonction pour afficher les commentaires
+        function displayComments() {
+            fetch('path/to/your/comments.json') // Remplace par le chemin vers ton fichier JSON
+                .then(response => response.json())
+                .then(data => {
+                    commentsDiv.innerHTML = '';
+                    data.comments.forEach(comment => {
+                        const commentElement = document.createElement('div');
+                        commentElement.className = 'comment';
+                        commentElement.innerHTML = `<strong>${comment.name}</strong><p>${comment.text}</p>`;
+                        commentsDiv.appendChild(commentElement);
+                    });
+                });
+        }
+    
+        // Soumission du formulaire
+        commentForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const commentText = document.getElementById('comment').value;
+    
+            // Envoi du commentaire (remplace l'URL par ton endpoint)
+            fetch('path/to/your/api', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, text: commentText }),
+            })
+            .then(response => {
+                if (response.ok) {
+                    commentForm.reset();
+                    displayComments(); // Met à jour les commentaires
+                }
+            });
+        });
+    
+        // Charger les commentaires au démarrage
+        displayComments();
+    </script>
+    
     <footer>
         <div class="lien">
             <a href="https://www.instagram.com/bricks44creations/" target="_blank"><img src="img/logo_instagram.png" alt="Logo Instagram"></a>
