@@ -931,24 +931,6 @@ footer p{
     color: white;
 }
 
-.commento-root {
-    display: flex;
-    justify-content: space-between; /* Espacement entre les colonnes */
-    gap: 20px; /* Espacement horizontal entre les deux colonnes */
-}
-
-/* Colonne gauche : Formulaire pour laisser un commentaire */
-.commento-editor {
-    flex-basis: 35%; /* Prend 45% de l'espace horizontal */
-}
-
-/* Colonne droite : Liste des commentaires */
-.commento-commentbox {
-    flex-basis: 40%; /* Prend 50% de l'espace horizontal */
-    overflow-y: auto; /* Ajoute une barre de défilement si nécessaire */
-    max-height: 80vh; /* Hauteur maximale pour éviter un débordement */
-}
-
 
 
 
@@ -969,11 +951,6 @@ footer p{
 
 
 /*COMMENTS*/
-#disqus_thread {
-    padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 body {
     font-family: Arial, sans-serif;
