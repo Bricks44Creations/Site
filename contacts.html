@@ -149,74 +149,10 @@
         <div class="voile"></div>
 
         <div id="commento"></div>
-
-        <div id="disqus_thread"></div>
     </div>
 
     <script defer src="https://cdn.commento.io/js/commento.js"></script>
-    <script>
-        /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-            
-        var disqus_config = function () {
-        this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = 'contacts-page'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-        };
-            
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://brickscreations.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <script>
-        const commentForm = document.getElementById('commentForm');
-        const commentsDiv = document.getElementById('comments');
-    
-        // Fonction pour afficher les commentaires
-        function displayComments() {
-            fetch('path/to/json/comment.json') // Remplace par le chemin vers ton fichier JSON
-                .then(response => response.json())
-                .then(data => {
-                    commentsDiv.innerHTML = '';
-                    data.comments.forEach(comment => {
-                        const commentElement = document.createElement('div');
-                        commentElement.className = 'comment';
-                        commentElement.innerHTML = `<strong>${comment.name}</strong><p>${comment.text}</p>`;
-                        commentsDiv.appendChild(commentElement);
-                    });
-                });
-        }
-    
-        // Soumission du formulaire
-        commentForm.addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const commentText = document.getElementById('comment').value;
-    
-            // Envoi du commentaire (remplace l'URL par ton endpoint)
-            fetch('path/to/your/api', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, text: commentText }),
-            })
-            .then(response => {
-                if (response.ok) {
-                    commentForm.reset();
-                    displayComments(); // Met à jour les commentaires
-                }
-            });
-        });
-    
-        // Charger les commentaires au démarrage
-        displayComments();
-    </script>
     
     <footer>
         <div class="lien">
