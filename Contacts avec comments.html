@@ -21,7 +21,7 @@
     <header>
         <a href="index.html"><img src="img/logo_essai_3.png" alt="logo"></a>
         <p>BRICKS CREATIONS</p>
-        <input autocomplete="off"type="text" id="searchInput" placeholder="Search...">
+        <input autocomplete="off" type="text" id="searchInput" placeholder="Search...">
         <button id="searchButton"onclick="searchPages()">
             <i class="bx bx-search-alt-2"></i>
         </button>
@@ -105,44 +105,59 @@
 
     <div class="main-content">
         <div class ="title">
-            <H1>PORTFOLIO</H1>
+            <H1>CONTACT INFO & SOCIAL LINKS</H1>
         </div>
-        <div class="title2">
-            <H2>Super Heroes Marvel</H2>
-        </div>
-        <div class="separator"></div>
 
-        <div class="contenu_page">
-            <div class="container">
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_1.svg" alt="Image 1" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_2.png" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_3.svg" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_4.png" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_5.png" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_6.svg" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_7.png" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <a href="https://www.youtube.com/watch?v=apD28YdP4kI&t=3s&ab_channel=BricksCreations" target="_blank">
-                        <img src="img/Portfolio/marvel/Arnim Zola - Bricks Creations_8.svg" alt="Image 2" class="image">
-                    </a>
-                </div>
+        <div class="separator"></div>
+        
+        <div class="gallery">
+            <div class="square">
+                <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank">
+                <img src="img/logo_youtube_contacts.png" alt="YouTube">
+                </a>
+                <p>Youtube</p>
+            </div>
+            <div class="square">
+                <a href="https://www.instagram.com/bricks44creations/" target="_blank">
+                    <img src="img/logo_instagram_contacts.png" alt="Instagram">
+                </a>
+                <p>Instagram</p>
+            </div>
+            <div class="square">
+                <a href="https://www.tiktok.com/@brickscreations?_t=8ljAw9taieG&_r=1" target="_blank">
+                <img src="img/logo_tiktok_contacts.png" alt="TikTok">
+                </a>
+                <p>Tiktok</p>
+            </div>
+            <div class="square">
+                <a href="mailto:stix.bricks@gmail.com" target="_blank">
+                <img src="img/logo_mail_contacts.png" alt="Mail">
+                </a>
+                <p>Mail</p>
             </div>
         </div>
 
+        <div class="separator"></div>
+
+        <div class="title2">
+            <H2>COMMENTS</H2>
+        </div>
+        <div class="comment-section">
+            <div class="input-section">
+                <h2>Leave your comment here</h2>
+                <form id="comment-form">
+                    <input autocomplete="off" type="text" id="name" placeholder="Name" required>
+                    <textarea id="comment" placeholder="Comment" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="display-section">
+                <h3>Comments</h3>
+                <div id="comments-container">
+                    <!-- Les commentaires s'afficheront ici -->
+                </div>
+            </div>
+        </div>
         <div class="voile"></div>
     </div>
 
@@ -163,6 +178,9 @@
             LEGO® is a registered trademark of The LEGO Group which does not sponsor, authorize or endorse this site.</p>
     </footer>
 
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-firestore.js"></script>
+
 </body>
 
 <script>
@@ -174,8 +192,10 @@
     };
 </script>
 
+
 <script src="./js/script.js"></script>
 <script src="./js/search.js"></script>
 <script src="./js/taille-sidebar.js"></script>
+
 
 </html>
