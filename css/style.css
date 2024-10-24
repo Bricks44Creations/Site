@@ -541,7 +541,6 @@ footer p{
 }
 
 .vignette .Tips .description{
-    width: 256px;
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
