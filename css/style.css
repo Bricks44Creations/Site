@@ -312,15 +312,16 @@ footer p{
 .dropdown-tri {
     position: relative;
     display: inline-block;
+    right: 0;
+        border: 0.5px;
 }
 
 .dropbtn-tri {
-    background-color: #003693; /* Couleur du bouton */
-    color: white;
+    background-color: #f4f4f4; /* Couleur du bouton */
+    color: #696969;
     border-radius: 5px;
     padding: 16px;
     font-size: 16px;
-    border: none;
     cursor: pointer;
 }
 
