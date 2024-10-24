@@ -17,6 +17,13 @@
     </script>
     </head>
 
+    <style>
+        #map {
+            height: 400px; /* Hauteur de la carte */
+            width: 100%; /* Largeur de la carte */
+        }
+    </style>
+
 <body>
     <header>
         <a href="index.html"><img src="img/logo_actuel.png" alt="logo"></a>
@@ -137,9 +144,12 @@
         </div>
 
         <div class="container-map">
+            <div id="map"></div>
+            <!--
             <div class="map-expo">
                 <img src="img/Expo/map_expo.png" alt="map">
             </div>
+        -->
         </div>
         
         <div class="voile"></div>
@@ -173,4 +183,27 @@
 </script>
 <script src="./js/img.js"></script>
 
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Créez une carte centrée entre les trois villes
+    var map = L.map('map').setView([50.4706, 2.5575], 10); // Coordonnées de la carte
+
+    // Ajoutez la couche de tuiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Ajoutez un marqueur à Divion
+    var markerDivion = L.marker([50.4706, 2.5575]).addTo(map);
+    markerDivion.bindPopup('Divion, France').openPopup(); // Infobulle pour Divion
+
+    // Ajoutez un marqueur à Bousies
+    var markerBousies = L.marker([50.3896, 3.1414]).addTo(map); // Coordonnées de Bousies
+    markerBousies.bindPopup('Bousies, France').openPopup(); // Infobulle pour Bousies
+
+    // Ajoutez un marqueur à Escaudoeuvres
+    var markerEscaudoeuvres = L.marker([50.3864, 3.0686]).addTo(map); // Coordonnées d'Escaudoeuvres
+    markerEscaudoeuvres.bindPopup('Escaudoeuvres, France').openPopup(); // Infobulle pour Escaudoeuvres
+</script>
 </html>
