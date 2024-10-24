@@ -27,11 +27,12 @@
                     <a href="index.html" class="dropbtn">Portfolio</a>
                     <ul class="dropdown-content">
                         <li><a href="city.html">City</a></li>
+                        <li><a href="jurassicpark.html">Jurassic Park</a></li>
                         <li><a href="marvel.html">Marvel</a></li>
-                        <li><a href="Wizarding world.html">Wizarding World</a></li>
                         <li><a href="medieval.html">Medieval</a></li>
-                        <li><a href="seize.html">Vignettes</a></li>
+                        <li><a href="Wizarding world.html">Wizarding World</a></li>
                         <li><a href="others.html">Others</a></li>
+                        <li><a href="seize.html">Vignettes</a></li>
                     </ul>
                 </li>
                 <li><a href="minifigs.html">Minifigs</a></li>
@@ -100,8 +101,19 @@
 
         <div class="separator"></div>
         
-        <div class="vignette">
-            <div class="portfolio_children">
+        <div class="dropdown-tri">
+            <button class="dropbtn-tri" onclick="toggleDropdown()">Sort by:  Date (newest to oldest)</button>
+            <div class="dropdown-content-tri">
+                <a href="#" onclick="sortPortfolio('name-asc')">Name A-Z</a>
+                <a href="#" onclick="sortPortfolio('name-desc')">Name Z-A</a>
+                <a href="#" onclick="sortPortfolio('date-asc')">Date (oldest to newest)</a>
+                <a href="#" onclick="sortPortfolio('date-desc')">Date (newest to oldest)</a>
+                <a href="#" onclick="sortPortfolio('relevance')">Relevance</a>
+            </div>
+        </div>
+        
+        <div id="portfolio" class="vignette">
+            <div class="portfolio_children" data-date="2024-09-27" data-name="McDonald's Restaurant" data-relevance="4">
                 <a href="McDonald's (jurassic park).html">
                     <img src="img/Miniatures/McDonald's.jpg" alt="McDonald's restaurant">
                 </a>
@@ -112,7 +124,7 @@
                     <p>27/09/24</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2024-09-05" data-name="QQS Restaurant" data-relevance="4">
                 <a href="QQS restaurant.html">
                     <img src="img/Miniatures/QQS restaurant.jpg" alt="QQS restaurant">
                 </a>
@@ -123,7 +135,7 @@
                     <p>05/09/24</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2024-09-02" data-name="Gift Shop" data-relevance="4">
                 <a href="gift shop.html">
                     <img src="img/Miniatures/gift shop.jpg" alt="gift shop">
                 </a>
@@ -134,7 +146,7 @@
                     <p>02/09/24</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2024-08-30" data-name="The Aviary" data-relevance="4">
                 <a href="Aviary.html">
                     <img src="img/Miniatures/aviary.jpg" alt="aviary">
                 </a>
@@ -145,7 +157,7 @@
                     <p>30/08/24</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2024-08-25" data-name="The Mosasaurus (2)" data-relevance="4">
                 <a href="mosasaurus.html">
                     <img src="img/Miniatures/mosasaurus.jpg" alt="mosasaurus">
                 </a>
@@ -156,7 +168,7 @@
                     <p>25/08/24</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2022-05-15" data-name="Motorized Monorail" data-relevance="4">
                 <a href="monorail.html">
                     <img src="img/Miniatures/monorail.jpg" alt="monorail">
                 </a>
@@ -167,7 +179,7 @@
                     <p>15/05/22</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2021-03-10" data-name="Bowling" data-relevance="4">
                 <a href="Bowling.html">
                     <img src="img/Miniatures/bowling.jpg" alt="bowling">
                 </a>
@@ -178,7 +190,7 @@
                     <p>10/03/21</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2021-03-07" data-name="T-rex enclosure" data-relevance="4">
                 <a href="T-rex.html">
                     <img src="img/Miniatures/t-rex.jpg" alt="T-rex">
                 </a>
@@ -189,7 +201,7 @@
                     <p>07/03/21</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2021-03-07" data-name="Subway restaurant" data-relevance="4">
                 <a href="Subway.html">
                     <img src="img/Miniatures/subway restaurant.png" alt="Subway">
                 </a>
@@ -200,7 +212,7 @@
                     <p>07/03/21</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2025-12-20" data-name="The Coffee Chain restaurant (1)" data-relevance="4">
                 <a href="the coffee chain restaurant.html">
                     <img src="img/Miniatures/coffee chain 1.jpg" alt="coffee chain">
                 </a>
@@ -211,7 +223,7 @@
                     <p>25/12/20</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2020-03-29" data-name="Headquater & Restaurant" data-relevance="4">
                 <a href="restaurant.html">
                     <img src="img/Miniatures/Restaurant.png" alt="Restaurant">
                 </a>
@@ -222,7 +234,7 @@
                     <p>29/03/20</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2020-01-04" data-name="A laboratory in the jungle" data-relevance="4">
                 <a href="laboratory.html">
                     <img src="img/Miniatures/Laboratory.jpg" alt="laboratory">
                 </a>
@@ -233,7 +245,7 @@
                     <p>04/01/20</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2020-01-03" data-name="Archaeological excavations" data-relevance="4">
                 <a href="excavations.html">
                     <img src="img/Miniatures/Fouilles.jpg" alt="fouilles">
                 </a>
@@ -276,5 +288,6 @@
     };
 </script>
 <script src="./js/img.js"></script>
+<script src="./js/sortportfolio.js"></script>
 
 </html>

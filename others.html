@@ -27,11 +27,12 @@
                     <a href="index.html" class="dropbtn">Portfolio</a>
                     <ul class="dropdown-content">
                         <li><a href="city.html">City</a></li>
+                        <li><a href="jurassicpark.html">Jurassic Park</a></li>
                         <li><a href="marvel.html">Marvel</a></li>
-                        <li><a href="Wizarding world.html">Wizarding World</a></li>
                         <li><a href="medieval.html">Medieval</a></li>
-                        <li><a href="seize.html">Vignettes</a></li>
+                        <li><a href="Wizarding world.html">Wizarding World</a></li>
                         <li><a href="others.html">Others</a></li>
+                        <li><a href="seize.html">Vignettes</a></li>
                     </ul>
                 </li>
                 <li><a href="minifigs.html">Minifigs</a></li>
@@ -100,8 +101,19 @@
 
         <div class="separator"></div>
         
-        <div class="vignette">
-            <div class="portfolio_children">
+        <div class="dropdown-tri">
+            <button class="dropbtn-tri" onclick="toggleDropdown()">Sort by:  Date (newest to oldest)</button>
+            <div class="dropdown-content-tri">
+                <a href="#" onclick="sortPortfolio('name-asc')">Name A-Z</a>
+                <a href="#" onclick="sortPortfolio('name-desc')">Name Z-A</a>
+                <a href="#" onclick="sortPortfolio('date-asc')">Date (oldest to newest)</a>
+                <a href="#" onclick="sortPortfolio('date-desc')">Date (newest to oldest)</a>
+                <a href="#" onclick="sortPortfolio('relevance')">Relevance</a>
+            </div>
+        </div>
+
+        <div id="portfolio" class="vignette">
+            <div class="portfolio_children" data-date="2024-08-10" data-name="Paris 2024 athletics track" data-relevance="3">
                 <a href="Paris 2024.html">
                     <img src="img/Miniatures/paris 2024.png" alt="paris 2024">
                 </a>
@@ -112,7 +124,7 @@
                     <p>10/08/24</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2023-08-12" data-name="Alpine A523 and Ferrari SF23 F1" data-relevance="3">
                 <a href="F1.html">
                     <img src="img/Miniatures/F1.png" alt="f1">
                 </a>
@@ -123,7 +135,7 @@
                     <p>12/08/23</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2023-02-12" data-name="Explorer in the jungle" data-relevance="4">
                 <a href="explorer.html">
                     <img src="img/Miniatures/explorer.jpg" alt="explorer">
                 </a>
@@ -134,7 +146,7 @@
                     <p>12/02/23</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2020-10-26" data-name="Microscale Hogwarts" data-relevance="3">
                 <a href="Microscale Hogwarts.html">
                     <img src="img/Miniatures/hogwarts.jpg" alt="microscale hogwarts">
                 </a>
@@ -145,7 +157,7 @@
                     <p>26/10/20</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2017-05-27" data-name="A pirates fortness under attack" data-relevance="1">
                 <a href="pirates fortness.html">
                     <img src="img/Miniatures/pirate fortness.JPG" alt="pirate fortness">
                 </a>
@@ -156,7 +168,7 @@
                     <p>27/05/17</p>
                 </div>
             </div>
-            <div class="portfolio_children">
+            <div class="portfolio_children" data-date="2017-04-11" data-name="A submerged greek temple" data-relevance="1">
                 <a href="Greek temple.html">
                     <img src="img/Miniatures/greek temple.jpg" alt="greek temple">
                 </a>
@@ -169,7 +181,6 @@
             </div>
         </div>
 
-        <div class="voile"></div>
     </div>
 
     <footer>
@@ -199,5 +210,6 @@
     };
 </script>
 <script src="./js/img.js"></script>
+<script src="./js/sortportfolio.js"></script>
 
 </html>
