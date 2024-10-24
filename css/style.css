@@ -958,20 +958,11 @@ footer p{
     }
     .vignette .portfolio .description,
     .vignette .portoflio_children .description,
-    .vignette .portoflio_children .date{
-        text-align: center;
-        overflow-wrap: break-word;
-        transform: translateX(0px);
-    }
-
-    .vignette .Tips .description{
-        text-align: center;
-        overflow-wrap: break-word;
-        transform: translateX(30%);
-    }
-    
+    .vignette .portoflio_children .date,
+    .vignette .Tips .description,
     .vignette .Tips .date{
         text-align: center;
+        overflow-wrap: break-word;
         transform: translateX(0px);
     }
 
