@@ -14,7 +14,12 @@
         gtag('js', new Date());
     
         gtag('config', 'G-CGB36SQTVF');
-    </script>
+        </script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
     </head>
 
 <body>
@@ -136,12 +141,12 @@
 
         </div>
 
-        <div class="container-map">
-            <div class="map-expo">
-                <img src="img/Expo/map_expo.png" alt="map">
-            </div>
+        <div class="box_map">
+            <div id="map"></div>
         </div>
+
     </div>
+
 
     <footer>
         <div class="lien">
@@ -159,7 +164,15 @@
             For the rest, the owners of the respective brands mentioned on the site remain the owners and it is very well like that <br>
             LEGO® is a registered trademark of The LEGO Group which does not sponsor, authorize or endorse this site.</p>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="js/administrativeHeadquarters.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
+
 
 <script>
     let btn = document.querySelector('#btn')
@@ -170,7 +183,5 @@
     };
 </script>
 <script src="./js/img.js"></script>
-
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 </html>
