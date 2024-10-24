@@ -27,11 +27,12 @@
                     <a href="index.html" class="dropbtn">Portfolio</a>
                     <ul class="dropdown-content">
                         <li><a href="city.html">City</a></li>
+                        <li><a href="jurassicpark.html">Jurassic Park</a></li>
                         <li><a href="marvel.html">Marvel</a></li>
-                        <li><a href="Wizarding world.html">Wizarding World</a></li>
                         <li><a href="medieval.html">Medieval</a></li>
-                        <li><a href="seize.html">Vignettes</a></li>
+                        <li><a href="Wizarding world.html">Wizarding World</a></li>
                         <li><a href="others.html">Others</a></li>
+                        <li><a href="seize.html">Vignettes</a></li>
                     </ul>
                 </li>
                 <li><a href="minifigs.html">Minifigs</a></li>
@@ -100,8 +101,19 @@
 
         <div class="separator"></div>
 
-        <div class="vignette">
-            <div class="portfolio_children">
+        <div class="dropdown-tri">
+            <button class="dropbtn-tri" onclick="toggleDropdown()">Sort by:  Date (newest to oldest)</button>
+            <div class="dropdown-content-tri">
+                <a href="#" onclick="sortPortfolio('name-asc')">Name A-Z</a>
+                <a href="#" onclick="sortPortfolio('name-desc')">Name Z-A</a>
+                <a href="#" onclick="sortPortfolio('date-asc')">Date (oldest to newest)</a>
+                <a href="#" onclick="sortPortfolio('date-desc')">Date (newest to oldest)</a>
+                <a href="#" onclick="sortPortfolio('relevance')">Relevance</a>
+            </div>
+        </div>
+
+        <div id="portfolio" class="vignette">
+            <div class="portfolio_children" data-date="2023-04-30" data-name="Protego Diabolica" data-relevance="4">
                 <a href="Protego Diabolica.html">
                     <img src="img/Miniatures/protego diabolica.png" alt="protego diabolica">
                 </a>
@@ -114,8 +126,7 @@
             </div>
         </div>
 
-        
-        <div class="voile"></div>
+
     </div>
 
     <footer>
@@ -145,5 +156,6 @@
     };
 </script>
 <script src="./js/img.js"></script>
+<script src="./js/sortportfolio.js"></script>
 
 </html>
