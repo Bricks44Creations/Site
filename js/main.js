@@ -7,16 +7,16 @@ const init = () => {
 
     const locations = [{
         name: 'Divion',
-        lat: 50.466671,
-        lon: 2.5},
+        lat: 50.47,
+        lon: 2.506},
         {
         name: 'Bousies',
         lat: 50.151 ,
         lon: 3.62},
         {
         name: 'Escaudoeuvres',
-        lat: 50.5,
-        lon: 3.3}];
+        lat: 50.19,
+        lon: 3.26667}];
 
     const map = L.map('map').setView(centerLoc, 8); /*Echelle de la map*/
 
