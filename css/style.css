@@ -1106,7 +1106,7 @@ footer p{
 
     #map {
         align-items: center;
-        width: 80%;
+        width: 90%;
     }
 
     .bloc{
@@ -1206,19 +1206,6 @@ footer p{
     .sidebar.active #btn{
         transform: translate(0);
         color: white;
-    }
-
-    .container-map{
-        padding: 0px;
-        width: 50%;
-        height: auto;
-        overflow: hidden;
-        left: 25%;
-        position: relative;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        margin-top: 10px;
     }
 
 }
