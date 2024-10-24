@@ -683,7 +683,7 @@ footer p{
     flex-direction: row; /* Les éléments sont affichés en colonne */
     text-align: center; /* Alignement du texte au centre */
     transition: transform 0.5s ease, opacity 0.5s ease;
-    margin-right: 300px;
+    margin-right: 40%;
 }
 
 
@@ -702,7 +702,6 @@ footer p{
 }
 
 .vignette_expo .lieux .description{
-    width: 150px;
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
@@ -716,24 +715,23 @@ footer p{
     font-size: small;
 }
 
-.container-map{
-    padding: 15px;
-    width: 350px;
-    height: auto;
-    overflow: hidden;
-    position: absolute;
-    top: 120px;
-    right: 30px;
-    bottom: 30px;
-    background-color: white;
-    border-radius: 10px;
-    padding-top: 35px;
-    padding-bottom:35px;
+
+
+
+.box_map {
+    display: flex;
+    justify-content: flex-end; /* Permet de positionner les éléments vers la droite */
+    margin-right: 0;
+    margin-top: -225px;
 }
-.map-expo img{
-    width: 100%;
-    height: auto;
+
+#map {
+    width: 40%;
+    height: 300px;
+    border-radius: 15px;
+    border: 10px solid white;
 }
+
 
 
 
@@ -990,6 +988,7 @@ footer p{
         margin-top: 50px;
     }
 
+
     .vignette{
         justify-content:center;
         flex-direction: column; /* Les éléments sont affichés en colonne */
@@ -1004,7 +1003,9 @@ footer p{
     .vignette .portfolio_children .description,
     .vignette .portfolio_children .date,
     .vignette .Tips .description,
-    .vignette .Tips .date{
+    .vignette .Tips .date,
+    .vignette_expo .lieux .description,
+    .vignette_expo .lieux .date{
         text-align: center;
         overflow-wrap: break-word;
         transform: translateX(0px);
@@ -1093,29 +1094,19 @@ footer p{
         flex-direction: column; /* Les éléments sont affichés en colonne */
         text-align: center; /* Alignement du texte au centre */
         margin-right: 0px;
+        width: 100%;
+        margin-bottom: 280px;
     }
 
-    .container-map{
-        padding: 0px;
-        width: 50%;
-        height: auto;
-        overflow: hidden;
-        left: 25%;
-        position: relative;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        margin-top: 10px;
+    .box_map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .vignette_expo .lieux .description{
-        text-align: center;
-        transform: translateX(90%);
-    }
-    
-    .vignette_expo .lieux .date{
-        text-align: center;
-        transform: translateX(0px);
+    #map {
+        align-items: center;
+        width: 80%;
     }
 
     .bloc{
@@ -1263,4 +1254,5 @@ footer p{
         text-align: center;
         font-size: xx-small;
     }
+    
 }
