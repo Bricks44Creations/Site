@@ -260,6 +260,7 @@ footer p{
     position: relative;
     background-color: #f4f4f4;
     margin-top: 70px;
+    margin-bottom: 0px;
     height: auto;
     min-height: 100vh; /*pour que ça fasse minimum une page en entier*/
     transition: all 0.5s ease;
@@ -993,10 +994,10 @@ footer p{
         font-size: xx-small;
     }
     .main-content{
-        top: -20px; /*pour rattraper le header qui a réduit de taille*/
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
+        margin-top: 50px;
     }
 
     .vignette{
