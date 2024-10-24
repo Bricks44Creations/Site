@@ -91,6 +91,7 @@
     </div>
 
     <div class="main-content">
+
         <div class ="title">
             <H1>PORTFOLIO</H1>
         </div>
@@ -99,9 +100,20 @@
         </div>
 
         <div class="separator"></div>
+
+        <div class="dropdown-tri">
+            <button class="dropbtn-tri">Sort by</button>
+            <div class="dropdown-content-tri">
+                <a href="#" onclick="sortPortfolio('name-asc')">Name A-Z</a>
+                <a href="#" onclick="sortPortfolio('name-desc')">Name Z-A</a>
+                <a href="#" onclick="sortPortfolio('date-asc')">Date (oldest to newest)</a>
+                <a href="#" onclick="sortPortfolio('date-desc')">Date (newest to oldest)</a>
+                <a href="#" onclick="sortPortfolio('relevance')">Relevance</a>
+            </div>
+        </div>
         
-        <div class="vignette">
-            <div class="portoflio_children">
+        <div id="portfolio" class="vignette">
+            <div class="portfolio_children" data-date="2024-10-08" data-name="Agatha on the Witches' road" data-relevance="4">
                 <a href="witches road.html">
                     <img src="img/Miniatures/Witches road.jpg" alt="Witches road">
                 </a>
@@ -112,7 +124,7 @@
                     <p>08/10/24</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2024-08-09" data-name="Thor VS Surtur" data-relevance="5">
                 <a href="Thor escapes from Muspelheim.html">
                     <img src="img/Miniatures/thor escapes.jpg" alt="Thor escapes from Muspelheim">
                 </a>
@@ -123,7 +135,7 @@
                     <p>09/08/24</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2024-08-07" data-name="Steve Rogers transformation scene" data-relevance="1">
                 <a href="steve rogers transformation scene.html">
                     <img src="img/Miniatures/Steve Rogers transformation scene.jpg" alt="steve rogers transformation">
                 </a>
@@ -134,7 +146,7 @@
                     <p>07/08/24</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2024-08-04" data-name="Loki and Mobius in Pompeii" data-relevance="4">
                 <a href="Pompeii.html">
                     <img src="img/Miniatures/pompeii.jpg" alt="Loki in pompeii">
                 </a>
@@ -145,7 +157,7 @@
                     <p>04/08/24</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2024-08-02" data-name="Black Widow death scene" data-relevance="4">
                 <a href="black widow death scene.html">
                     <img src="img/Miniatures/Black widow death scene.jpg" alt="black widow">
                 </a>
@@ -156,7 +168,7 @@
                     <p>02/08/24</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2024-07-31" data-name="Deadpool Wolverine opening scene" data-relevance="4">
                 <a href="deadpool intro scene.html">
                     <img src="img/Miniatures/deadpool.jpg" alt="deadpool">
                 </a>
@@ -167,7 +179,7 @@
                     <p>31/07/24</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-12-31" data-name="Iron man 2 boxing ring" data-relevance="4">
                 <a href="natalie rushman.html">
                     <img src="img/Miniatures/Natalie Rushman.jpg" alt="Natalie Rushman">
                 </a>
@@ -178,7 +190,7 @@
                     <p>31/12/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-12-31" data-name="Hulk vs leviathan" data-relevance="4">
                 <a href="hulk1.html">
                     <img src="img/Miniatures/hulk.jpg" alt="hulk">
                 </a>
@@ -189,7 +201,7 @@
                     <p>31/12/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-12-30" data-name="Loki, God of Stories" data-relevance="4">
                 <a href="god of stories.html">
                     <img src="img/Miniatures/god of stories.jpg" alt="god of stories">
                 </a>
@@ -200,7 +212,7 @@
                     <p>30/12/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-12-30" data-name="Shuri meets Killmonger" data-relevance="4">
                 <a href="wakanda throne.html">
                     <img src="img/Miniatures/wakanda throne.jpg" alt="wakanda throne">
                 </a>
@@ -211,7 +223,7 @@
                     <p>30/12/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-12-30" data-name="Tomb of Alexander the Great" data-relevance="4">
                 <a href="moon knight tomb.html">
                     <img src="img/Miniatures/moon knight.jpg" alt="tomb of alexander the great">
                 </a>
@@ -222,7 +234,7 @@
                     <p>30/12/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-11-15" data-name="Loki meets Victor Timely (2)" data-relevance="4">
                 <a href="Victor timely 2.html">
                     <img src="img/Miniatures/timely (2).jpg" alt="timely">
                 </a>
@@ -233,7 +245,7 @@
                     <p>15/11/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-11-04" data-name="Ouroboros meets Loki" data-relevance="4">
                 <a href="Ouroborus.html">
                     <img src="img/Miniatures/Ouroboros.jpg" alt="Ouroboros">
                 </a>
@@ -244,7 +256,7 @@
                     <p>04/11/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-11-02" data-name="Citadel of He Who Remains" data-relevance="4">
                 <a href="He Who Remains.html">
                     <img src="img/Miniatures/He who remains.jpg" alt="He who remains">
                 </a>
@@ -255,7 +267,7 @@
                     <p>02/11/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-07-07" data-name="GOTG3 Final fight" data-relevance="4">
                 <a href="GOTG3.html">
                     <img src="img/Miniatures/GOTG3.jpg" alt="GOTG3">
                 </a>
@@ -266,7 +278,7 @@
                     <p>07/07/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-07-06" data-name="Copying human identities" data-relevance="4">
                 <a href="secret invasion.html">
                     <img src="img/Miniatures/secret invasion.jpg" alt="secret invasion">
                 </a>
@@ -277,7 +289,7 @@
                     <p>06/07/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-03-19" data-name="Loki meets Victor Timely (1)" data-relevance="4">
                 <a href="Victor timely 1.html">
                     <img src="img/Miniatures/timely (1).jpg" alt="timely">
                 </a>
@@ -288,7 +300,7 @@
                     <p>19/03/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-03-19" data-name="Sanctum Sanctorum" data-relevance="4">
                 <a href="Stairs.html">
                     <img src="img/Miniatures/Stairs.jpg" alt="stairs">
                 </a>
@@ -299,7 +311,7 @@
                     <p>19/03/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2023-02-12" data-name="Shang-chi VS Wenwu" data-relevance="4">
                 <a href="shangchi.html">
                     <img src="img/Miniatures/shangchi.jpg" alt="shangchi">
                 </a>
@@ -310,7 +322,7 @@
                     <p>12/02/23</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-12-30" data-name="Iron heart reveal" data-relevance="4">
                 <a href="ironheart.html">
                     <img src="img/Miniatures/iron heart.jpg" alt="ironheart">
                 </a>
@@ -321,7 +333,7 @@
                     <p>30/12/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-08-10" data-name="Tony in the snow" data-relevance="4">
                 <a href="ironman3.html">
                     <img src="img/Miniatures/snow.jpg" alt="snow">
                 </a>
@@ -332,7 +344,7 @@
                     <p>10/08/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-08-08" data-name="Doctor strange meets Mordo" data-relevance="4">
                 <a href="shamballa.html">
                     <img src="img/Miniatures/doctorstrange.jpg" alt="doctorstrange">
                 </a>
@@ -343,7 +355,7 @@
                     <p>08/08/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-08-08" data-name="Steve 1st fight" data-relevance="4">
                 <a href="fisrtfight.html">
                     <img src="img/Miniatures/steve.jpg" alt="steve">
                 </a>
@@ -354,7 +366,7 @@
                     <p>08/08/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-08-07" data-name="Tony discorvers time travel" data-relevance="4">
                 <a href="timetravel.html">
                     <img src="img/Miniatures/timetravel.jpg" alt="timetravel">
                 </a>
@@ -365,7 +377,7 @@
                     <p>07/08/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-08-07" data-name="Morgan Stark" data-relevance="4">
                 <a href="morgan.html">
                     <img src="img/Miniatures/morgan.jpg" alt="morgan">
                 </a>
@@ -376,7 +388,7 @@
                     <p>07/08/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-07-10" data-name="Wanda VS Illuminati" data-relevance="4">
                 <a href="spaghettis.html">
                     <img src="img/Miniatures/spaghettis.jpg" alt="hulk">
                 </a>
@@ -387,7 +399,7 @@
                     <p>10/07/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-07-10" data-name="The Illuminati" data-relevance="4">
                 <a href="illuminati.html">
                     <img src="img/Miniatures/illuminati.jpg" alt="illuminati">
                 </a>
@@ -398,7 +410,7 @@
                     <p>10/07/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-07-10" data-name="Thor with GOTG" data-relevance="4">
                 <a href="Thor with GOTG.html">
                     <img src="img/Miniatures/thor with GOTG.jpg" alt="thor with GOTG">
                 </a>
@@ -409,7 +421,7 @@
                     <p>10/07/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-06-05" data-name="Strange at mount Everest" data-relevance="4">
                 <a href="everest.html">
                     <img src="img/Miniatures/everest.jpg" alt="everest">
                 </a>
@@ -420,7 +432,7 @@
                     <p>05/06/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-06-05" data-name="Spiderman "My back !" scene" data-relevance="4">
                 <a href="my back.html">
                     <img src="img/Miniatures/my back.jpg" alt="my back">
                 </a>
@@ -431,7 +443,7 @@
                     <p>05/06/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2022-05-29" data-name="Tony build Mark I" data-relevance="4">
                 <a href="mark1.html">
                     <img src="img/Miniatures/mark1.jpg" alt="Mark 1">
                 </a>
@@ -442,7 +454,7 @@
                     <p>29/05/22</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-12-19" data-name="J. Jonah Jameson" data-relevance="4">
                 <a href="JJJ.html">
                     <img src="img/Miniatures/JJJ.jpg" alt="jjj">
                 </a>
@@ -453,7 +465,7 @@
                     <p>19/12/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-11-27" data-name="Eternals opening scene" data-relevance="4">
                 <a href="Eternals.html">
                     <img src="img/Miniatures/eternals.jpg" alt="Eternals">
                 </a>
@@ -464,7 +476,7 @@
                     <p>27/11/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-10-10" data-name="Microscale Asgard" data-relevance="4">
                 <a href="asgard.html">
                     <img src="img/Miniatures/asgard.jpg" alt="asgard">
                 </a>
@@ -475,7 +487,7 @@
                     <p>10/10/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-10-07" data-name="Wandavision ep2" data-relevance="4">
                 <a href="Wandavision ep2.html">
                     <img src="img/Miniatures/Wandavision ep2.jpg" alt="Wandavision">
                 </a>
@@ -486,7 +498,7 @@
                     <p>07/10/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-09-25" data-name="Cature of Loki by TVA" data-relevance="4">
                 <a href="loki capture.html">
                     <img src="img/Miniatures/loki tva.jpg" alt="loki">
                 </a>
@@ -497,7 +509,7 @@
                     <p>25/09/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-09-18" data-name="Loki in the void" data-relevance="4">
                 <a href="void.html">
                     <img src="img/Miniatures/void.jpg" alt="loki">
                 </a>
@@ -508,7 +520,7 @@
                     <p>18/09/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-05-18" data-name="Iron man VS Ivan Vanko" data-relevance="4">
                 <a href="Monaco.html">
                     <img src="img/Miniatures/Iron man monaco.jpg" alt="Monaco">
                 </a>
@@ -519,7 +531,7 @@
                     <p>18/05/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-05-16" data-name="Killmonger death scene" data-relevance="4">
                 <a href="killmonger death.html">
                     <img src="img/Miniatures/Killmonger death.jpg" alt="killmonger death">
                 </a>
@@ -530,7 +542,7 @@
                     <p>16/05/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-05-14" data-name="Thor arrives in Wakanda" data-relevance="4">
                 <a href="thor arrives in wakanda.html">
                     <img src="img/Miniatures/thor arrives in wakanda.jpg" alt="Thor arrives in Wakanda">
                 </a>
@@ -541,7 +553,7 @@
                     <p>14/05/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-05-01" data-name="Arc reactor" data-relevance="4">
                 <a href="arc reactor.html">
                     <img src="img/Miniatures/arc reactor.jpg" alt="arc reactor">
                 </a>
@@ -552,7 +564,7 @@
                     <p>01/05/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-05-01" data-name="TASM2 ending scene" data-relevance="4">
                 <a href="TASM2.html">
                     <img src="img/Miniatures/TASM2.jpg" alt="TASM2">
                 </a>
@@ -563,7 +575,7 @@
                     <p>01/05/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-04-11" data-name="Skrull transformation" data-relevance="4">
                 <a href="Skrull transformation.Html">
                     <img src="img/Miniatures/skrull transformation.jpg" alt="skrull transformation">
                 </a>
@@ -574,7 +586,7 @@
                     <p>11/04/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-04-10" data-name="Ancestral plane" data-relevance="4">
                 <a href="Ancestral plane.html">
                     <img src="img/Miniatures/Ancestral plane.jpg" alt="Ancestral plane">
                 </a>
@@ -585,7 +597,7 @@
                     <p>10/04/21</p>
                 </div>
             </div>
-            <div class="portoflio_children">
+            <div class="portfolio_children" data-date="2021-04-07" data-name="Arnim Zola" data-relevance="4">
                 <a href="Arnim Zola.html">
                     <img src="img/Miniatures/arnim zola.jpg" alt="Arnim Zola">
                 </a>
@@ -598,7 +610,6 @@
             </div>
         </div>
 
-        <div class="voile"></div>
     </div>
 
     <footer>
@@ -619,6 +630,7 @@
     </footer>
 </body>
 
+
 <script>
     let btn = document.querySelector('#btn')
     let sidebar = document.querySelector('.sidebar')
@@ -628,5 +640,6 @@
     };
 </script>
 <script src="./js/img.js"></script>
+<script src="./js/sortportfolio.js"></script>
 
 </html>
