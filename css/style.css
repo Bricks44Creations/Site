@@ -1179,7 +1179,7 @@ footer p{
         font-size: xx-small;
     }
     .main-content{
-        top: -20px; /*pour rattraper le header qui a réduit de taille*/
+        margin-top: 50px;
         justify-content: flex-start;
         flex-direction: column;
         width: 100%;
