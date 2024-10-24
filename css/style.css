@@ -155,7 +155,6 @@ footer{
     background-color: #dedede;
     height: 120px;
     width: 100%;
-    bottom: -22px; /*parce qu'il y a des marges je comprend pas pourquoi*/
     display: flex;
     justify-content: center;
     z-index: 900;
@@ -261,9 +260,8 @@ footer p{
     position: relative;
     background-color: #f4f4f4;
     margin-top: 70px;
-    margin-bottom: -22px;
     height: auto;
-    min-height: 105vh; /*pour que ça fasse minimum une page en entier*/
+    min-height: 100vh; /*pour que ça fasse minimum une page en entier*/
     transition: all 0.5s ease;
     padding: 1rem;
     z-index: 1;
@@ -311,7 +309,45 @@ footer p{
 
 }
 
+.dropdown-tri {
+    position: relative;
+    display: inline-block;
+}
 
+.dropbtn-tri {
+    background-color: #003693; /* Couleur du bouton */
+    color: white;
+    border-radius: 5px;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content-tri {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-tri a{
+    margin: 5px;
+    color: #003693;
+    text-decoration: none;
+}
+
+.dropdown-content-tri a:hover{
+    color: #000000;
+}
+
+.dropdown-tri:hover .dropdown-content-tri {
+    display: flex;
+    flex-direction: column;
+}
 
 
 
@@ -506,17 +542,17 @@ footer p{
 
 /*VIGNETTES*/
 
-.vignette .portoflio_children:hover{
+.vignette .portfolio_children:hover{
     transform: scale(1.05);
 }
 
-.vignette .portoflio_children .description{
+.vignette .portfolio_children .description{
     text-align: left;
     overflow-wrap: break-word;
     transform: translateX(12px);
 }
 
-.vignette .portoflio_children .date{
+.vignette .portfolio_children .date{
     color: #696969;
     text-align: left;
     overflow-wrap: break-word;
@@ -973,8 +1009,8 @@ footer p{
         height:144px;
     }
     .vignette .portfolio .description,
-    .vignette .portoflio_children .description,
-    .vignette .portoflio_children .date,
+    .vignette .portfolio_children .description,
+    .vignette .portfolio_children .date,
     .vignette .Tips .description,
     .vignette .Tips .date{
         text-align: center;
