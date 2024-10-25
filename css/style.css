@@ -891,8 +891,13 @@ footer p{
 }
 
 .sidebar ul li a:hover{
+    pointer-events: none;
+}
+
+.sidebar.active ul li a:hover{
     background-color: #fff;
     color: #003693;
+    pointer-events: all;
 }
 
 .sidebar ul li a i{
@@ -1023,13 +1028,13 @@ footer p{
 
     .sidebar{
         opacity: 1;
-        pointer-events: all;
+        pointer-events:all;
     }
 
     .sidebar.active{
         width: 100%;
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateX(0);
     }
     .sidebar{
         z-index: 1000;
