@@ -4,21 +4,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=0.9">
         <meta name="description" content="Discover my unique and personalized LEGO creations on my portfolio.">
         <meta name="keywords" content="LEGO, MOC, Bricks, Creations, Portfolio, Tips, Minifigs, mocs, incstructions">
-        
-        <title>Bricks Creations - Portfolio</title>
+
+        <title>Bricks Creations - Conventions</title>
 
         <link rel="stylesheet" href="css/style.css">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link rel="icon" type="image/png" sizes="16x16" href="./img/logo_actuel.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/logo_actuel.png">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGB36SQTVF"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
+        
             gtag('config', 'G-CGB36SQTVF');
         </script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+
     </head>
 
 <body>
@@ -97,74 +102,55 @@
 
     <div class="main-content">
         <div class ="title">
-            <H1>PORTFOLIO</H1>
+            <H1>CONVENTIONS</H1>
         </div>
 
         <div class="separator"></div>
 
-        
-        <div class="vignette">
-            <div class="portfolio">
-                <a href="Portfolio/City.html">
-                    <img src="img/Miniatures/city.jpg" alt="City">
-                </a>
-                <div class="description">
-                    <p>CITY</p>
+        <div class="left-right">
+            <div class="vignette_expo">
+                <div class="lieux">
+                    <a href="Conventions/Divion.html" >
+                        <img src="img/Expo/divion_affiche.png" alt="divion">
+                    </a>
+                    <div class="description">
+                        <p>DIVION</p>
+                    </div>
+                    <div class="date">
+                        <p>26/02/22</p>
+                    </div>
+                </div>
+                <div class="lieux">
+                    <a href="Conventions/Escaudoeuvres.html">
+                        <img src="img/Expo/escaudoeuvres_affiche.png" alt="escaudoeuvres">
+                    </a>
+                    <div class="description">
+                        <p>ESCAUDOEUVRES</p>
+                    </div>
+                    <div class="date">
+                        <p>05/10/19</p>
+                    </div>
+                </div>
+                <div class="lieux">
+                    <a href="Conventions/Bousies.html" >
+                        <img src="img/Expo/bousies_affiche.png" alt="bousies">
+                    </a>
+                    <div class="description">
+                        <p>BOUSIES</p>
+                    </div>
+                    <div class="date">
+                        <p>03/02/18</p>
+                    </div>
                 </div>
             </div>
-            <div class="portfolio">
-                <a href="Portfolio/Jurassic Park.html">
-                    <img src="img/Miniatures/jurassicpark.jpg" alt="Jurassic park">
-                </a>
-                <div class="description">
-                    <p>Jurassic Park / World</p>
-                </div>
-            </div>
-            <div class="portfolio">
-                <a href="Portfolio/Marvel.html">
-                    <img src="img/Miniatures/moon knight (2).jpg" alt="Marvel">
-                </a>
-                <div class="description">
-                    <p> Super Heroes MARVEL</p>
-                </div>
-            </div>
-            <div class="portfolio">
-                <a href="Portfolio/Medieval.html">
-                    <img src="img/Miniatures/medieval.jpg" alt="Medieval">
-                </a>
-                <div class="description">
-                    <p>Castle - Medieval</p>
-                </div>
-            </div>
-            <div class="portfolio">
-                <a href="Portfolio/Wizarding world.html">
-                    <img src="img/Miniatures/wizarding world.png" alt="Wizarding World">
-                </a>
-                <div class="description">
-                    <p>Wizarding World</p>
-                </div>
-            </div>
-            <div class="portfolio">
-                <a href="Portfolio/Others.html">
-                    <img src="img/Miniatures/explorer.jpg" alt="Others">
-                </a>
-                <div class="description">
-                    <p>Others</p>
-                </div>
-            </div>
-            <div class="portfolio">
-                <a href="Portfolio/Vignettes.html">
-                    <img src="img/Miniatures/vignette.jpg" alt="Minifigs">
-                </a>
-                <div class="description">
-                    <p>Vignettes 16x16</p>
-                </div>
+
+            <div class="box_map">
+                <div id="map"></div>
             </div>
         </div>
 
-        <div class="voile"></div>
-
     </div>
+
 
     <footer>
         <div class="lien">
@@ -182,7 +168,15 @@
             For the rest, the owners of the respective brands mentioned on the site remain the owners and it is very well like that <br>
             LEGO® is a registered trademark of The LEGO Group which does not sponsor, authorize or endorse this site.</p>
     </footer>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    <script src="js/administrativeHeadquarters.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
+
 
 <script>
     let btn = document.querySelector('#btn')
