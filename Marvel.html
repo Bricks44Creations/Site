@@ -1,0 +1,683 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.9">
+        <meta name="description" content="Discover my unique and personalized LEGO creations on my portfolio.">
+        <meta name="keywords" content="LEGO, MOC, Bricks, Creations, Portfolio, Tips, Minifigs, mocs, incstructions">
+
+        <title>Bricks Creations - Portfolio - Marvel</title>
+        
+        <link rel="stylesheet" href="../css/style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/png" sizes="16x16" href="../img/logo_actuel.png">
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CGB36SQTVF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-CGB36SQTVF');
+        </script>
+    </head>
+
+<body>
+    <header>
+        <a href="..index.html"><img src="../img/logo_actuel.png" alt="logo"></a>
+        <p>Bricks Creations</p>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="../index.html" class="dropbtn">Portfolio</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../Portfolio/City.html">City</a></li>
+                        <li><a href="../Portfolio/Jurassic-Park.html">Jurassic Park</a></li>
+                        <li><a href="../Portfolio/Marvel.html">Marvel</a></li>
+                        <li><a href="../Portfolio/Medieval.html">Medieval</a></li>
+                        <li><a href="../Portfolio/Wizarding-world.html">Wizarding World</a></li>
+                        <li><a href="../Portfolio/Others.html">Others</a></li>
+                        <li><a href="../Portfolio/Vignettes.html">Vignettes</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Minifigs.html">Minifigs</a></li>
+                <li><a href="../Tips.html">Tips</a></li>
+                <li><a href="../Instructions.html">Instructions</a></li>
+                <li class="dropdown">
+                    <a href="../Conventions.html" class="dropbtn">Conventions</a>
+                    <ul class="dropdown-content">
+                        <li><a href="../Conventions/Bousies.html">Bousies</a></li>
+                        <li><a href="../Conventions/Preseau.html">Preseau</a></li>
+                        <li><a href="../Conventions/Divion.html">Divion</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="sidebar", id="sidebar">
+        <div class="top">
+            <div class="name">
+                <p>BRICKS CREATIONS</p>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <i class="bx bx-images"></i>
+                    <span class="nav-item">Portfolio</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Minifigs.html">
+                    <i class='bx bx-male'></i>
+                    <span class="nav-item">Minifigs</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Tips.html">
+                    <i class="bx bxs-bulb"></i>
+                    <span class="nav-item">Tips</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Instructions.html">
+                    <i class='bx bx-file'></i>
+                    <span class="nav-item">Instructions</span>
+                </a>
+            </li>
+            <li>
+                <a href="../Conventions.html">
+                    <i class="bx bx-share-alt"></i>
+                    <span class="nav-item">Conventions</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+
+        <div class ="title">
+            <H1>PORTFOLIO</H1>
+        </div>
+        <div class="title2">
+            <H2>Super Heroes Marvel</H2>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="dropdown-tri">
+            <button class="dropbtn-tri" onclick="toggleDropdown()">Sort by:  Date (newest to oldest)</button>
+            <div class="dropdown-content-tri">
+                <a href="#" onclick="sortPortfolio('name-asc')">Name A-Z</a>
+                <a href="#" onclick="sortPortfolio('name-desc')">Name Z-A</a>
+                <a href="#" onclick="sortPortfolio('date-asc')">Date (oldest to newest)</a>
+                <a href="#" onclick="sortPortfolio('date-desc')">Date (newest to oldest)</a>
+                <a href="#" onclick="sortPortfolio('relevance')">Relevance</a>
+            </div>
+        </div>
+        
+        <div id="portfolio" class="vignette">
+            <div class="portfolio_children" data-date="2024-10-08" data-name="Agatha on the Witches' road" data-relevance="3">
+                <a href="Marvel/Witches-road.html">
+                    <img src="../img/Miniatures/Witches road.jpg" alt="Witches road">
+                </a>
+                <div class="description">
+                    <p>Agatha on the Witches' road</p>
+                </div>
+                <div class="date">
+                    <p>08/10/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-10-08" data-name="Taweret's Boat" data-relevance="3">
+                <a href="Marvel/Taweret's-boat.html">
+                    <img src="../img/Miniatures/taweret's boat.jpg" alt="Taweret's Boat">
+                </a>
+                <div class="description">
+                    <p>Taweret's Boat</p>
+                </div>
+                <div class="date">
+                    <p>08/10/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-08-09" data-name="Endgame final battle" data-relevance="5">
+                <a href="Marvel/Endgame-final-battle.html">
+                    <img src="../img/Miniatures/Endgame final battle.jpg" alt="jjj">
+                </a>
+                <div class="description">
+                    <p>Endgame final battle</p>
+                </div>
+                <div class="date">
+                    <p>09/08/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-08-09" data-name="Thor VS Surtur" data-relevance="4">
+                <a href="Marvel/Thor-escapes-from-Muspelheim.html">
+                    <img src="../img/Miniatures/thor escapes.jpg" alt="Thor escapes from Muspelheim">
+                </a>
+                <div class="description">
+                    <p>Thor VS Surtur</p>
+                </div>
+                <div class="date">
+                    <p>09/08/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-08-07" data-name="Steve Rogers transformation scene" data-relevance="4.5">
+                <a href="Marvel/Steve-Rogers-transformation.html">
+                    <img src="../img/Miniatures/Steve Rogers transformation scene.jpg" alt="steve rogers transformation">
+                </a>
+                <div class="description">
+                    <p>Steve Rogers transformation scene</p>
+                </div>
+                <div class="date">
+                    <p>07/08/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-08-04" data-name="Loki and Mobius in Pompeii" data-relevance="3">
+                <a href="Marvel/Pompeii.html">
+                    <img src="../img/Miniatures/pompeii.jpg" alt="Loki in pompeii">
+                </a>
+                <div class="description">
+                    <p>Loki and Mobius in Pompeii</p>
+                </div>
+                <div class="date">
+                    <p>04/08/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-08-02" data-name="Black Widow death scene" data-relevance="4">
+                <a href="Marvel/Black-Widow-Death-Scene.html">
+                    <img src="../img/Miniatures/Black widow death scene.jpg" alt="black widow">
+                </a>
+                <div class="description">
+                    <p>Black Widow death scene</p>
+                </div>
+                <div class="date">
+                    <p>02/08/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2024-07-31" data-name="Deadpool Wolverine opening scene" data-relevance="3">
+                <a href="Marvel/Deadpool-and-Wolverine-opening-scene.html">
+                    <img src="../img/Miniatures/deadpool.jpg" alt="deadpool">
+                </a>
+                <div class="description">
+                    <p>Deadpool Wolverine opening scene</p>
+                </div>
+                <div class="date">
+                    <p>31/07/24</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-12-31" data-name="Iron man 2 boxing ring" data-relevance="3">
+                <a href="Marvel/Natalie-Rushman.html">
+                    <img src="../img/Miniatures/Natalie Rushman.jpg" alt="Natalie Rushman">
+                </a>
+                <div class="description">
+                    <p>Iron man 2 boxing ring</p>
+                </div>
+                <div class="date">
+                    <p>31/12/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-12-31" data-name="Hulk vs leviathan" data-relevance="4">
+                <a href="Marvel/Hulk-VS-Leviathan.html">
+                    <img src="../img/Miniatures/hulk.jpg" alt="hulk">
+                </a>
+                <div class="description">
+                    <p>Hulk vs leviathan</p>
+                </div>
+                <div class="date">
+                    <p>31/12/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-12-30" data-name="Loki, God of Stories" data-relevance="3">
+                <a href="Marvel/Loki-God-of-Stories.html">
+                    <img src="../img/Miniatures/god of stories.jpg" alt="god of stories">
+                </a>
+                <div class="description">
+                    <p>Loki, God of Stories</p>
+                </div>
+                <div class="date">
+                    <p>30/12/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-12-30" data-name="Shuri meets Killmonger" data-relevance="3">
+                <a href="Marvel/Wakanda-throne.html">
+                    <img src="../img/Miniatures/wakanda throne.jpg" alt="wakanda throne">
+                </a>
+                <div class="description">
+                    <p>Shuri meets Killmonger</p>
+                </div>
+                <div class="date">
+                    <p>30/12/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-12-30" data-name="Tomb of Alexander the Great" data-relevance="3.5">
+                <a href="Marvel/Moon-Knight-discovers-a-Tomb.html">
+                    <img src="../img/Miniatures/moon knight.jpg" alt="tomb of alexander the great">
+                </a>
+                <div class="description">
+                    <p>Tomb of Alexander the Great</p>
+                </div>
+                <div class="date">
+                    <p>30/12/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-11-15" data-name="Loki meets Victor Timely (2)" data-relevance="2.5">
+                <a href="Marvel/Victor-timely-2.html">
+                    <img src="../img/Miniatures/timely (2).jpg" alt="timely">
+                </a>
+                <div class="description">
+                    <p>Loki meets Victor Timely (2)</p>
+                </div>
+                <div class="date">
+                    <p>15/11/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-11-04" data-name="Ouroboros meets Loki" data-relevance="3.5">
+                <a href="Marvel/Ouroborus.html">
+                    <img src="../img/Miniatures/Ouroboros.jpg" alt="Ouroboros">
+                </a>
+                <div class="description">
+                    <p>Ouroboros meets Loki</p>
+                </div>
+                <div class="date">
+                    <p>04/11/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-11-02" data-name="Citadel of He Who Remains" data-relevance="3">
+                <a href="Marvel/He-Who-Remains.html">
+                    <img src="../img/Miniatures/He who remains.jpg" alt="He who remains">
+                </a>
+                <div class="description">
+                    <p>Citadel of He Who Remains</p>
+                </div>
+                <div class="date">
+                    <p>02/11/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-07-07" data-name="GOTG3 Final fight" data-relevance="3">
+                <a href="Marvel/GOTG3-final-battle-scene.html">
+                    <img src="../img/Miniatures/GOTG3.jpg" alt="GOTG3">
+                </a>
+                <div class="description">
+                    <p>GOTG3 Final fight</p>
+                </div>
+                <div class="date">
+                    <p>07/07/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-07-06" data-name="Copying human identities" data-relevance="2.5">
+                <a href="Marvel/Secret-Invasion.html">
+                    <img src="../img/Miniatures/secret invasion.jpg" alt="secret invasion">
+                </a>
+                <div class="description">
+                    <p>Copying human identities</p>
+                </div>
+                <div class="date">
+                    <p>06/07/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-03-19" data-name="Loki meets Victor Timely (1)" data-relevance="2">
+                <a href="Marvel/Victor-timely-1.html">
+                    <img src="../img/Miniatures/timely (1).jpg" alt="timely">
+                </a>
+                <div class="description">
+                    <p>Loki meets Victor Timely (1)</p>
+                </div>
+                <div class="date">
+                    <p>19/03/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-03-19" data-name="Sanctum Sanctorum" data-relevance="3">
+                <a href="Marvel/Sanctum-Sanctorum-Stairs.html">
+                    <img src="../img/Miniatures/Stairs.jpg" alt="stairs">
+                </a>
+                <div class="description">
+                    <p>Sanctum Sanctorum</p>
+                </div>
+                <div class="date">
+                    <p>19/03/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2023-02-12" data-name="Shang-chi VS Wenwu" data-relevance="3">
+                <a href="Marvel/Shang-chi.html">
+                    <img src="../img/Miniatures/shangchi.jpg" alt="shangchi">
+                </a>
+                <div class="description">
+                    <p>Shang-chi VS Wenwu</p>
+                </div>
+                <div class="date">
+                    <p>12/02/23</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-12-30" data-name="Iron heart reveal" data-relevance="3">
+                <a href="Marvel/Iron-Heart.html">
+                    <img src="../img/Miniatures/iron heart.jpg" alt="ironheart">
+                </a>
+                <div class="description">
+                    <p>Iron heart reveal</p>
+                </div>
+                <div class="date">
+                    <p>30/12/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-08-10" data-name="Tony in the snow" data-relevance="3">
+                <a href="Marvel/Iron-man-3.html">
+                    <img src="../img/Miniatures/snow.jpg" alt="snow">
+                </a>
+                <div class="description">
+                    <p>Tony in the snow</p>
+                </div>
+                <div class="date">
+                    <p>10/08/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-08-08" data-name="Doctor strange meets Mordo" data-relevance="3.5">
+                <a href="Marvel/Shamballa.html">
+                    <img src="../img/Miniatures/doctorstrange.jpg" alt="doctorstrange">
+                </a>
+                <div class="description">
+                    <p>Doctor strange meets Mordo</p>
+                </div>
+                <div class="date">
+                    <p>08/08/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-08-08" data-name="Steve 1st fight" data-relevance="2.5">
+                <a href="Marvel/Captain-America-first-fight.html">
+                    <img src="../img/Miniatures/steve.jpg" alt="steve">
+                </a>
+                <div class="description">
+                    <p>Steve 1st fight</p>
+                </div>
+                <div class="date">
+                    <p>08/08/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-08-07" data-name="Tony discorvers time travel" data-relevance="3">
+                <a href="Marvel/Time-Travel.html">
+                    <img src="../img/Miniatures/timetravel.jpg" alt="timetravel">
+                </a>
+                <div class="description">
+                    <p>Tony discorvers time travel</p>
+                </div>
+                <div class="date">
+                    <p>07/08/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-08-07" data-name="Morgan Stark" data-relevance="3">
+                <a href="Marvel/Morgan-Stark.html">
+                    <img src="../img/Miniatures/morgan.jpg" alt="morgan">
+                </a>
+                <div class="description">
+                    <p>Morgan Stark</p>
+                </div>
+                <div class="date">
+                    <p>07/08/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-07-10" data-name="Wanda VS Illuminati" data-relevance="3">
+                <a href="Marvel/Red-Richards-turn-into-spaghetti.html">
+                    <img src="../img/Miniatures/spaghettis.jpg" alt="hulk">
+                </a>
+                <div class="description">
+                    <p>Red Richards turn into spaghetti</p>
+                </div>
+                <div class="date">
+                    <p>10/07/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-07-10" data-name="The Illuminati" data-relevance="3.5">
+                <a href="Marvel/Illuminati.html">
+                    <img src="../img/Miniatures/illuminati.jpg" alt="illuminati">
+                </a>
+                <div class="description">
+                    <p>The Illuminati</p>
+                </div>
+                <div class="date">
+                    <p>10/07/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-07-10" data-name="Thor with GOTG" data-relevance="3">
+                <a href="Marvel/Thor-with-GOTG.html">
+                    <img src="../img/Miniatures/thor with GOTG.jpg" alt="thor with GOTG">
+                </a>
+                <div class="description">
+                    <p>Thor with GOTG</p>
+                </div>
+                <div class="date">
+                    <p>10/07/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-06-05" data-name="Strange at mount Everest" data-relevance="3">
+                <a href="Marvel/Doctor-Strange-on-Everest.html">
+                    <img src="../img/Miniatures/everest.jpg" alt="everest">
+                </a>
+                <div class="description">
+                    <p>Strange at mount Everest</p>
+                </div>
+                <div class="date">
+                    <p>05/06/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-06-05" data-name="Spiderman 'My back !' scene" data-relevance="3">
+                <a href="Marvel/My-back-Spiderman-3.html">
+                    <img src="../img/Miniatures/my back.jpg" alt="my back">
+                </a>
+                <div class="description">
+                    <p>Spiderman "My back !" scene</p>
+                </div>
+                <div class="date">
+                    <p>05/06/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2022-05-29" data-name="Tony build Mark I" data-relevance="3">
+                <a href="Marvel/Iron-man-Mark-I.html">
+                    <img src="../img/Miniatures/mark1.jpg" alt="Mark 1">
+                </a>
+                <div class="description">
+                    <p>Tony build Mark I</p>
+                </div>
+                <div class="date">
+                    <p>29/05/22</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-12-30" data-name="Spiderman VS Electro" data-relevance="3.5">
+                <a href="Marvel/Spiderman-VS-Electro.html">
+                    <img src="../img/Miniatures/Spiderman VS Electro.jpg" alt="steve rogers transformation">
+                </a>
+                <div class="description">
+                    <p>Spiderman VS Electro</p>
+                </div>
+                <div class="date">
+                    <p>30/12/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-12-19" data-name="J. Jonah Jameson" data-relevance="3">
+                <a href="Marvel/J-Jonah-Jameson.html">
+                    <img src="../img/Miniatures/JJJ.jpg" alt="jjj">
+                </a>
+                <div class="description">
+                    <p>J. Jonah Jameson</p>
+                </div>
+                <div class="date">
+                    <p>19/12/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-11-27" data-name="Eternals opening scene" data-relevance="3">
+                <a href="Marvel/Eternals.html">
+                    <img src="../img/Miniatures/eternals.jpg" alt="Eternals">
+                </a>
+                <div class="description">
+                    <p>Eternals opening scene</p>
+                </div>
+                <div class="date">
+                    <p>27/11/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-10-10" data-name="Microscale Asgard" data-relevance="2">
+                <a href="Marvel/Microscale-Asgard.html">
+                    <img src="../img/Miniatures/asgard.jpg" alt="asgard">
+                </a>
+                <div class="description">
+                    <p>Microscale Asgard</p>
+                </div>
+                <div class="date">
+                    <p>10/10/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-10-07" data-name="Wandavision ep2" data-relevance="2">
+                <a href="Marvel/Wandavision-ep2.html">
+                    <img src="../img/Miniatures/Wandavision ep2.jpg" alt="Wandavision">
+                </a>
+                <div class="description">
+                    <p>Wandavision ep2</p>
+                </div>
+                <div class="date">
+                    <p>07/10/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-09-25" data-name="Cature of Loki by TVA" data-relevance="3">
+                <a href="Marvel/Loki-captured.html">
+                    <img src="../img/Miniatures/loki tva.jpg" alt="loki">
+                </a>
+                <div class="description">
+                    <p>Cature of Loki by TVA</p>
+                </div>
+                <div class="date">
+                    <p>25/09/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-09-18" data-name="Loki in the void" data-relevance="3">
+                <a href="Marvel/Lokis-in-the-void.html">
+                    <img src="../img/Miniatures/void.jpg" alt="loki">
+                </a>
+                <div class="description">
+                    <p>Loki in the void</p>
+                </div>
+                <div class="date">
+                    <p>18/09/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-05-18" data-name="Iron man VS Ivan Vanko" data-relevance="2.5">
+                <a href="Marvel/Iron-man-in-Monaco.html">
+                    <img src="../img/Miniatures/Iron man monaco.jpg" alt="Monaco">
+                </a>
+                <div class="description">
+                    <p>Iron man VS Ivan Vanko</p>
+                </div>
+                <div class="date">
+                    <p>18/05/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-05-16" data-name="Killmonger death scene" data-relevance="4">
+                <a href="Marvel/Killmonger-death-scene.html">
+                    <img src="../img/Miniatures/Killmonger death.jpg" alt="killmonger death">
+                </a>
+                <div class="description">
+                    <p>Killmonger death scene</p>
+                </div>
+                <div class="date">
+                    <p>16/05/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-05-14" data-name="Thor arrives in Wakanda" data-relevance="3">
+                <a href="Marvel/Thor-arrives-in-Wakanda.html">
+                    <img src="../img/Miniatures/thor arrives in wakanda.jpg" alt="Thor arrives in Wakanda">
+                </a>
+                <div class="description">
+                    <p>Thor arrives in Wakanda</p>
+                </div>
+                <div class="date">
+                    <p>14/05/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-05-01" data-name="Arc reactor" data-relevance="2.5">
+                <a href="Marvel/Arc-Reactor.html">
+                    <img src="../img/Miniatures/arc reactor.jpg" alt="arc reactor">
+                </a>
+                <div class="description">
+                    <p>Arc reactor</p>
+                </div>
+                <div class="date">
+                    <p>01/05/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-05-01" data-name="TASM2 ending scene" data-relevance="2">
+                <a href="Marvel/TASM2.html">
+                    <img src="../img/Miniatures/TASM2.jpg" alt="TASM2">
+                </a>
+                <div class="description">
+                    <p>TASM2 ending scene</p>
+                </div>
+                <div class="date">
+                    <p>01/05/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-04-11" data-name="Skrull transformation" data-relevance="2">
+                <a href="Marvel/Skrull-transformation.Html">
+                    <img src="../img/Miniatures/skrull transformation.jpg" alt="skrull transformation">
+                </a>
+                <div class="description">
+                    <p>Skrull transformation</p>
+                </div>
+                <div class="date">
+                    <p>11/04/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-04-10" data-name="Ancestral plane" data-relevance="3">
+                <a href="Marvel/Ancestral-Plane.html">
+                    <img src="../img/Miniatures/Ancestral plane.jpg" alt="Ancestral plane">
+                </a>
+                <div class="description">
+                    <p>Ancestral plane</p>
+                </div>
+                <div class="date">
+                    <p>10/04/21</p>
+                </div>
+            </div>
+            <div class="portfolio_children" data-date="2021-04-07" data-name="Arnim Zola" data-relevance="2.5">
+                <a href="Marvel/Arnim-Zola.html">
+                    <img src="../img/Miniatures/arnim zola.jpg" alt="Arnim Zola">
+                </a>
+                <div class="description">
+                    <p>Arnim Zola</p>
+                </div>
+                <div class="date">
+                    <p>07/04/21</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="lien">
+            <a href="https://www.instagram.com/bricks44creations/" target="_blank"><img src="../img/logo_instagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.instagram.com/bricks44creations/" target="_blank"> @bricks44creations</a>
+            <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> <img src="../img/logo_youtube.png" alt="Logo Youtube"></a>
+            <a href="https://www.youtube.com/channel/UCs2jd_HYAgd4Lc9llKp3J6Q" target="_blank"> Bricks Creations</a>
+            <a href="mailto:stix.bricks@gmail.com" target="_blank"> <img src="../img/logo_mail.png" alt="Logo Mail"></a>
+            <a href="mailto:stix.bricks@gmail.com" target="_blank"> stix.bricks@gmail.com</a>
+            <a href="https://www.tiktok.com/@brickscreations?_t=8ljAw9taieG&_r=1" target="_blank"> <img src="../img/logo_tiktok.png" alt="Logo Tiktok"></a>
+            <a href="https://www.tiktok.com/@brickscreations?_t=8ljAw9taieG&_r=1" target="_blank"> brickscreations</a>
+        </div>
+        <p>© 2024 All rights reserved Bricks Creations <br>
+            I don't work for LEGO®, I am not corrupted by LEGO®, I buy my LEGO® myself. <br>
+            For the rest, the owners of the respective brands mentioned on the site remain the owners and it is very well like that <br>
+            LEGO® is a registered trademark of The LEGO Group which does not sponsor, authorize or endorse this site.</p>
+    </footer>
+</body>
+
+
+<script>
+    let btn = document.querySelector('#btn')
+    let sidebar = document.querySelector('.sidebar')
+
+    btn.onclick = function(){
+        sidebar.classList.toggle('active');
+    };
+</script>
+<script src="../js/img.js"></script>
+<script src="../js/sortportfolio.js"></script>
+
+</html>
