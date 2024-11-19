@@ -145,6 +145,11 @@ header nav ul li:hover > a {
 
 /* FOOTER */
 
+.footer-inactive {
+    opacity: 0;
+    pointer-events: none; /* Pour éviter l'interaction avec le footer */
+}
+
 footer>*{
     position: absolute;
     bottom: 0px;
@@ -525,6 +530,163 @@ footer p{
 }
 
 
+
+.container-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.left-block {
+    width: 34%;
+}
+
+.right-block {
+    display: flex; /* Utilise flexbox pour disposer les éléments à l'intérieur */
+    flex-direction: column; /* Place les éléments dans une colonne */
+    align-items: flex-end; /* Aligne tous les éléments à droite */
+    width: 60%;
+}
+
+
+.carousel {
+    display: flex;
+    flex-direction: column;
+    width: 165px;
+    margin-left: 10px;
+    overflow-y: auto;
+    max-height: 400px; /* Sera mis à jour pour correspondre à la hauteur de l'image principale */
+}
+
+.thumbnail_2 {
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.thumbnail_2:hover, .thumbnail_2.active {
+    border-color: #000000;
+}
+
+.main-image-container {
+    width: 60%;
+    position: relative; /* Position relative pour la superposition de l'affichage du compteur */
+}
+
+.image-counter {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-image-container img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    overflow: hidden;  /* Cela va désactiver le défilement */
+}
+
+
+
+.modal-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    padding: 20px;
+    max-width: 60%; /* Changez cette valeur selon vos besoins */
+    max-height: 90%; /* Changez cette valeur selon vos besoins */
+    overflow: auto; /* Défilement si le contenu est trop grand */
+    background-color: #fff; /* Couleur de fond blanche */
+    border-radius: 15px; /* Coins arrondis sur tous les côtés */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre pour donner de la profondeur */
+    position: relative; /* Positionnement pour le bouton de fermeture */
+    overflow: hidden;  /* Cela va désactiver le défilement */
+}
+
+.modal-image {
+    width: 90%;  /* 80% de la largeur de la modale */
+    height: auto; /* Pour maintenir les proportions de l'image */
+    max-height: 70%; /* Pour éviter que l'image dépasse la hauteur de la modale */
+    margin: auto; /* Centrer l'image horizontalement */
+    display: block; /* Pour que le margin auto fonctionne correctement */
+}
+
+
+.modal-image :hover{
+    pointer-events: all;
+}
+
+
+.close-1 {
+    position: absolute;
+    top: 7px; /* Ajuster la position par rapport au haut de la modale */
+    right: 10px; /* Ajuster la position par rapport à la droite de la modale */
+    background-color: transparent; /* Fond transparent */
+    border: none; /* Pas de bordure */
+    font-size: 50px; /* Taille de la police */
+    color: #696969; /* Couleur du texte */
+    cursor: pointer; /* Curseur en forme de main */
+    z-index: 1000; /* Assurer que le bouton est au-dessus du reste du contenu */
+}
+
+/* Suppression du survol pour toujours afficher le bouton */
+.close-1:hover {
+    color: #000000; /* Changer la couleur au survol (optionnel) */
+}
+
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8); /* Fond noir avec opacité */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Pour donner une forme ronde */
+    width: 40px; /* Largeur du bouton */
+    height: 40px; /* Hauteur du bouton */
+    cursor: pointer;
+    opacity: 0.8; /* Opacité des boutons */
+    transition: background-color 0.3s;
+    z-index: 10; /* Assurer que les boutons sont au-dessus de l'image */
+}
+
+.nav-button:hover {
+    background-color: rgba(0, 0, 0, 1); /* Fond noir plein au survol */
+}
+
+.left {
+    left: 10px; /* Positionnement à gauche */
+}
+
+.right {
+    right: 10px; /* Positionnement à droite */
+}
+
+.loading-spinner {
+    display: none; /* Initialement caché */
+    /* Ajoutez des styles pour votre indicateur */
+}
 
 
 
@@ -941,7 +1103,7 @@ footer p{
 
 
 /** RESPONSIVE **/
-/** Petits écrans (Téléphones mobiles - paysage) **/
+/** Petits écrans (Téléphones mobiles - portrait) **/
 
 
 @media screen and (max-width: 600px){
@@ -997,6 +1159,36 @@ footer p{
         margin-top: 50px;
     }
 
+    .carousel {
+        display: none;
+    }
+
+    .container-page {
+        display: block;
+    }
+
+    .left-block { 
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    
+    .right-block {
+        width: 100%;
+    }
+
+    .main-image-container {
+        width: 100%;
+    }
+
+    .modal {
+        top: 50px;
+        height: calc(100% - 50px);
+    }
+
+    .modal-content {
+        max-width: 90%; /* Changez cette valeur selon vos besoins */
+    }
+    
 
     .vignette{
         justify-content:center;
@@ -1185,7 +1377,22 @@ footer p{
         flex-direction: column;
         width: 100%;
     }
+    .carousel {
+        display: none;
+    }
 
+    .main-image-container {
+        width: 90%;
+    }
+
+    .modal {
+        top: 50px;
+        height: calc(100% - 50px);
+    }
+
+    .modal-content {
+        max-width: 90%; /* Changez cette valeur selon vos besoins */
+    }
 
     .img a img{
         width: 80%;
