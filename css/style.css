@@ -308,7 +308,7 @@ footer p{
     margin-bottom: 15px;
 }
 
-.ecriture{
+.ecriture, .ecriture-inspiration{
     font-family: Arial, Helvetica, sans-serif;
     font-weight:lighter;
     font-size: large;
@@ -440,7 +440,9 @@ footer p{
     display: flex;
     flex-wrap: wrap;
     gap: 16px; /* Espace entre les blocs */
+    justify-content: center;
 }
+
 .container_tips {
     display: flex;
     flex-wrap: wrap;
@@ -531,7 +533,9 @@ footer p{
 
 
 
-.container-page {
+.container-page,
+.container-page-haut,
+.container-page-bas {
     display: flex;
     justify-content: space-between;
     padding: 10px;
@@ -539,16 +543,69 @@ footer p{
 
 
 .left-block {
-    width: 34%;
+    flex: 2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    background-color: #fff;
 }
 
 .right-block {
     display: flex; /* Utilise flexbox pour disposer les éléments à l'intérieur */
     flex-direction: column; /* Place les éléments dans une colonne */
-    align-items: flex-end; /* Aligne tous les éléments à droite */
-    width: 60%;
+    flex: 3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
 }
 
+.inspiration, .instructions {
+    flex: 1 1 100%; /* Chaque bloc occupera toute la largeur disponible */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    height: 40vh;
+}
+
+.inspiration {
+    margin-right: 20px;
+    max-width: 50%;
+    padding-bottom: 0;
+}
+
+.instructions {
+    background-color: #fff;
+    max-width: 50%;
+}
+
+.inspiration-bloc{
+    display: flex;
+    height: 70%;
+}
+
+.image-inspiration{
+    margin-bottom: 0;
+}
+
+.image-inspiration img{
+    height: 90%;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.ecriture-inspiration{
+    width: 80%;
+}
+
+.ecriture-inspiration img{
+    height: 30px;
+    width: auto;
+    transform: translateY(8px);
+}
 
 .carousel {
     display: flex;
