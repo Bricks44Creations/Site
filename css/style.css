@@ -567,7 +567,6 @@ footer p{
     border-radius: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     background-color: #fff;
-    height: 40vh;
 }
 
 .inspiration {
@@ -592,7 +591,7 @@ footer p{
 
 .image-inspiration img,
 .image-instruction img{
-    height: 90%;
+    height: 150px;
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 5px;
@@ -600,9 +599,11 @@ footer p{
 
 .ecriture-inspiration{
     width: 80%;
+    margin-bottom: 20px;
 }
 .ecriture-instruction{
     width: 90%;
+    margin-bottom: 20px;
 }
 
 .ecriture-inspiration img,
@@ -1384,10 +1385,42 @@ footer p{
     .bloc_minifig{
         width: 100%;
     }
+
+    .left-block, 
+    .right-block,
+    .instructions,
+    .inspiration{
+        width: 100%;
+        margin-bottom: 10px;
+        max-width: 100%;
+    }
+
+    .inspiration-bloc{
+        flex-direction: column;
+    }
+
+    .image-inspiration{
+        margin: auto;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+
+    .image-inspiration img{
+        height:280px;
+        margin-left: 0;
+    }
+
+
+    .container-page-haut{
+        flex-direction: column-reverse;
+    }
+    .container-page-bas{
+        flex-direction: column;
+    }
 }
 
 /** Petits écrans (Téléphones mobiles - paysage) **/
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 960px) {
     header{
         height: 50px;
     }
@@ -1489,7 +1522,7 @@ footer p{
 
 }
 
-@media screen and (min-width: 900px) and (max-width: 1025px){
+@media screen and (min-width: 960px) and (max-width: 1025px){
     footer{
         height: 380px;
         width: 100%;
