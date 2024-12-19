@@ -104,35 +104,90 @@
         </div>
         <div class="separator"></div>
 
-        <div class="contenu_page">
-            <div class="container">
-                <div class="bloc">
-                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_1.svg" alt="Image 1" class="image">
+        <div class="container-page-haut">
+            <div class="left-block">
+                <div class="ecriture_title">
+                    Shuri meets Killmonger in the Wakanda throne room
                 </div>
-                <div class="bloc">
-                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_2.png" alt="Image 2" class="image">
+                <div class="ecriture_date">
+                    30 Dec 2023 - 2 hours
                 </div>
-                <div class="bloc">
-                    <a href="img/instructions/Wakanda Throne Instructions - Bricks Creations.pdf">
-                        <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_3.svg" alt="Image 2" class="image">
-                    </a>
-                </div>
-                <div class="bloc">
-                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_4.png" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_5.png" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_6.svg" alt="Image 2" class="image">
-                </div>
-                <div class="bloc">
-                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_7.png" alt="Image 2" class="image">
+                <div class="ecriture">
+                    "- Hello cousin <br>
+                    - You choose me"
                 </div>
             </div>
+    
+            <div class="right-block">
+                <div class="container">
+                    <div class="main-image-container">
+                        <div class="image-counter" id="imageCounter">1/3</div>
+                        <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_2.png" alt="Image principale" id="mainImage" onclick="openModal()">
+                        <button class="nav-button left" onclick="prevImage()">&#10094;</button> <!-- Flèche gauche -->
+                        <button class="nav-button right" onclick="nextImage()">&#10095;</button> <!-- Flèche droite -->
+                    </div>
+                    <div class="carousel">
+                        <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_2.png" alt="Miniature 1" class="thumbnail_2" onclick="showImage(1, '../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_2.png')">
+                        <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_4.png" alt="Miniature 3" class="thumbnail_2" onclick="showImage(2, '../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_4.png')">
+                        <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_7.png" alt="Miniature 4" class="thumbnail_2" onclick="showImage(3, '../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_7.png')">
+                        <!-- Ajoutez d'autres miniatures si nécessaire -->
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-1" onclick="closeModal()">&times;</span>
+                    <button class="nav-button left" onclick="prevImage()">&#10094;</button>
+                    <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_2.png" alt="Image 1" class="modal-image" id="modalImage">
+                    <button class="nav-button right" onclick="nextImage()">&#10095;</button>
+                </div>
+            </div>
+            
         </div>
+
+        <div class="container-page-bas">
+            <div class="inspiration">
+                <div class="ecriture_title">
+                    Inspirations
+                </div>
+                <div class="inspiration-bloc">
+                    <div class="ecriture-inspiration">
+                        <img src="../../img/Portfolio/which.jpg" alt="which">
+                         Black Panther : Wakanda Forever <br>
+                        <img src="../../img/Portfolio/where.jpg" alt="where">
+                         Wakanda throne, Wakanda <br>
+                        <img src="../../img/Portfolio/when.jpg" alt="when">
+                         2025 <br>
+                        <img src="../../img/Portfolio/who.jpg" alt="who">
+                         Shuri, Killmonger
+                    </div>
+                    <div class="image-inspiration">
+                        <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_5.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="instructions">
+                <div class="ecriture_title">
+                    Instructions
+                </div>
+                <div class="instruction-bloc">
+                    <div class="image-instruction">
+                        <a href="../../img/instructions/Wakanda Throne Instructions - Bricks Creations.pdf">
+                            <img src="../../img/Portfolio/marvel/Shuri meets killmonger - Bricks Creations_8.png" alt="">
+                        </a>
+                    </div>
+                    <div class="ecriture-inspiration">
+                        <img src="../../img/Portfolio/which.jpg" alt="which">
+                         <a href="../../img/instructions/Wakanda Throne Instructions - Bricks Creations.pdf">Click here !</a>
+                    </div>
+                </div>
+            </div>
         
-        <div class="voile"></div>
+        </div>
+
     </div>
 
     <footer>
@@ -161,6 +216,7 @@
         sidebar.classList.toggle('active');
     };
 </script>
-<script src="./js/img.js"></script>
+
+<script src="../../js/script.js"></script>
 
 </html>
